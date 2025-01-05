@@ -13,7 +13,7 @@ public class HelloWorld
         var tcpClients = new List<TcpClient>();
 
         var ipAddress = IPAddress.Parse("127.0.0.1");
-        var ipEndpoint = new IPEndPoint(ipAddress, 2204);
+        var ipEndpoint = new IPEndPoint(ipAddress, 31526);
         var tcpServer = new TcpListener(ipEndpoint);
         tcpServer.Start();
         while (true)
@@ -27,15 +27,21 @@ public class HelloWorld
                 var tcpClientStreamReader = new StreamReader(tcpClientStream);
                 while (true)
                 {
-                    await tcpClientStreamReader.ReadAsync(getMessage, 0, getMessage.Length);
-                    var getMessageContent = String.Join("", getMessage);
-                    getMessage = new char[1024];
-                    foreach (var otherClient in tcpClients)
+                    int bytesRead =  await tcpClientStreamReader.ReadAsync(getMessage, 0, getMessage.Length);
+                    if (bytesRead != 0)
                     {
-                        var streamWriter = new StreamWriter(otherClient.GetStream());
-                        streamWriter.AutoFlush = true;
-                        await streamWriter.WriteAsync(getMessageContent);
-                        await streamWriter.FlushAsync();
+                        var getMessageContent = String.Join("", getMessage);
+                        if (getMessageContent != "" && getMessageContent != String.Join("", new char[1024]))
+                        {
+                            getMessage = new char[1024];
+                            foreach (var otherClient in tcpClients)
+                            {
+                                var streamWriter = new StreamWriter(otherClient.GetStream());
+                                streamWriter.AutoFlush = true;
+                                await streamWriter.WriteAsync(getMessageContent);
+                                await streamWriter.FlushAsync();
+                            }
+                        }
                     }
                 }
             });
