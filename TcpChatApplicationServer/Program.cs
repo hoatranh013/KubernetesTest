@@ -1,6 +1,7 @@
 ﻿// Online C# Editor for free
 // Write, Edit and Run your C# code using C# Online Compiler
 
+using RabbitMQ.Client;
 using System;
 using System.Net;
 using System.Net.Sockets;
@@ -11,6 +12,35 @@ public class HelloWorld
     public static async Task Main(string[] args)
     {
         var tcpClients = new List<TcpClient>();
+
+        var rabbitMqFactory = new ConnectionFactory();
+        rabbitMqFactory.UserName = "guest";
+        rabbitMqFactory.Password = "guest";
+        rabbitMqFactory.VirtualHost = "/";
+        rabbitMqFactory.HostName = "localhost";
+        rabbitMqFactory.Port = 5672;
+
+        var conn = rabbitMqFactory.CreateConnection();
+        var channel = conn.CreateModel();
+        try
+        {
+            channel.ExchangeDeclare("message-exchange", ExchangeType.Direct, true, false);
+        }
+        catch
+        {
+            Console.WriteLine("Exchange Exists");
+        }
+
+        try
+        {
+            channel.QueueDeclare("message-queue");
+        }
+        catch
+        {
+            Console.WriteLine("Queue Exists");
+        }
+
+        channel.QueueBind("message-queue", "message-exchange", "info");
 
         var ipAddress = IPAddress.Parse("127.0.0.1");
         var ipEndpoint = new IPEndPoint(ipAddress, 31526);
@@ -28,21 +58,18 @@ public class HelloWorld
                 while (true)
                 {
                     int bytesRead =  await tcpClientStreamReader.ReadAsync(getMessage, 0, getMessage.Length);
-                    if (bytesRead != 0)
+                    var getMessageContent = String.Join("", getMessage);
+                    getMessage = new char[1024];
+                    foreach (var otherClient in tcpClients)
                     {
-                        var getMessageContent = String.Join("", getMessage);
-                        if (getMessageContent != "" && getMessageContent != String.Join("", new char[1024]))
-                        {
-                            getMessage = new char[1024];
-                            foreach (var otherClient in tcpClients)
-                            {
-                                var streamWriter = new StreamWriter(otherClient.GetStream());
-                                streamWriter.AutoFlush = true;
-                                await streamWriter.WriteAsync(getMessageContent);
-                                await streamWriter.FlushAsync();
-                            }
-                        }
+                        var streamWriter = new StreamWriter(otherClient.GetStream());
+                        streamWriter.AutoFlush = true;
+                        await streamWriter.WriteAsync(getMessageContent);
+                        await streamWriter.FlushAsync();
                     }
+
+                    channel.BasicPublish("message-exchange", "info", false, null, Encoding.UTF8.GetBytes(getMessageContent));
+
                 }
             });
         }

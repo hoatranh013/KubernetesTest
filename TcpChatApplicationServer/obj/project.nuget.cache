@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "XNufDc1JmrRDlaXOYRy90KTZ4Jdt4fuMPNukAw1ekIqQxcd0NZapaIhiIBDvKVhkWn4i3x/I+GYPX2G9wBngTw==",
+  "dgSpecHash": "oMZmgKIREpF9zvU/hdF+IFRzwCMawHSAF9FEz7T/SCQuRqqGeDjKfhWPxb6/Ys/mShlRfB5QBlnXbowNKm1CWA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Desktop\\New folder (4)\\TcpChatApplicationServer\\TcpChatApplicationServer\\TcpChatApplicationServer.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\New folder (9)\\KubernetesTest\\TcpChatApplicationServer\\TcpChatApplicationServer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\rabbitmq.client\\6.0.0\\rabbitmq.client.6.0.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\New folder (4)\\TcpChatApplicationServer\\TcpChatApplicationServer\\TcpChatApplicationServer.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\New folder (9)\\KubernetesTest\\TcpChatApplicationServer\\TcpChatApplicationServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\New folder (4)\\TcpChatApplicationServer\\TcpChatApplicationServer\\TcpChatApplicationServer.csproj": {
+    "C:\\Users\\Admin\\Desktop\\New folder (9)\\KubernetesTest\\TcpChatApplicationServer\\TcpChatApplicationServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\New folder (4)\\TcpChatApplicationServer\\TcpChatApplicationServer\\TcpChatApplicationServer.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\New folder (9)\\KubernetesTest\\TcpChatApplicationServer\\TcpChatApplicationServer.csproj",
         "projectName": "TcpChatApplicationServer",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\New folder (4)\\TcpChatApplicationServer\\TcpChatApplicationServer\\TcpChatApplicationServer.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\New folder (9)\\KubernetesTest\\TcpChatApplicationServer\\TcpChatApplicationServer.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\New folder (4)\\TcpChatApplicationServer\\TcpChatApplicationServer\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\New folder (9)\\KubernetesTest\\TcpChatApplicationServer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +43,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
