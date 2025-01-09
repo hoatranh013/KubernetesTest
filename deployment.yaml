@@ -1,0 +1,134 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tcp-server-chat-application
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: tcp-server-chat-application
+  template:
+    metadata:
+      labels:
+        app: tcp-server-chat-application
+    spec:
+      containers:
+        - name: tcp-server-chat-application
+          image: tcp-server-chat-application:latest
+          ports:
+            - containerPort: 12345
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: tcp-server-chat-application
+spec:
+  selector:
+    app: tcp-server-chat-application
+  ports:
+    - protocol: TCP
+      port: 80
+      nodePort: 31526
+      targetPort: 12345
+  type: NodePort
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: rabbit-mq-server
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      rabbitmq: rabbit-mq-server
+  template:
+    metadata:
+      labels:
+        rabbitmq: rabbit-mq-server
+    spec:
+      containers:
+        - name: rabbit-mq-server
+          image: rabbit-mq-server:latest
+          ports:
+            - containerPort: 5672
+            - containerPort: 15672            
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: rabbit-mq-server
+spec:
+  selector:
+    rabbitmq: rabbit-mq-server
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5672
+  type: ClusterIP
+---
+apiVersion: apps/v1
+kind: Deployment 
+metadata:
+  name: app-consumer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app-consumer
+  template:
+    metadata:
+      labels:
+        app: app-consumer
+    spec:
+      containers:
+        - name: app-consumer 
+          image: app-consumer:latest
+          ports: 
+            - containerPort: 12345
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: app-consumer
+spec:
+  selector:
+    app: app-consumer
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 12345
+  type: ClusterIP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: postgresql-database
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      database: postgresql-database
+  template:
+    metadata:
+      labels:
+        database: postgresql-database
+    spec:
+      containers:
+        - name: postgresql-database
+          image: postgresql-database:latest
+          ports:
+            - containerPort: 5432
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: postgresql-database
+spec:
+  selector:
+    database: postgresql-database
+  ports:
+    - protocol: TCP
+      port: 5432
+    

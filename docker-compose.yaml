@@ -1,0 +1,61 @@
+version: '3.0'
+services:
+  application:
+    build: KubernetesTest/TcpChatApplicationServer/.
+    depends_on:
+      - rabbitmq
+    networks:
+      - backend
+    ports:
+      - "30000:30000"
+    environment:
+      RABBITMQ_HOST: rabbitmq
+    restart: on-failure   
+  consumer:
+    build: RabbitMqConsumer/RabbitMqConsumer/.
+    depends_on:
+      - rabbitmq
+      - postgresql
+    networks:
+      - backend 
+    ports:
+      - "30001:30001"
+    environment:
+      RABBITMQ_HOST: rabbitmq
+    restart: on-failure  
+  postgresql:
+    image: postgres:latest
+    container_name: postgres_container    
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: test
+    ports:
+      - "5432:5432"
+    networks:
+      - backend
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+  rabbitmq:
+    image: "rabbitmq:3-management"
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: password
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+      - rabbitmq_config:/etc/rabbitmq
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge
+
+volumes:
+  rabbitmq_data:
+  rabbitmq_config:
+  postgres_data:
+    driver: local
