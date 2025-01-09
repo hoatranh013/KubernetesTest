@@ -1,7 +1,7 @@
 version: '3.0'
 services:
   application:
-    build: KubernetesTest/TcpChatApplicationServer/.
+    build: KubernetesTestPracticing/TcpChatApplicationServer/.
     depends_on:
       - rabbitmq
     networks:
@@ -17,7 +17,7 @@ services:
       - rabbitmq
       - postgresql
     networks:
-      - backend 
+      - backend
     ports:
       - "30001:30001"
     environment:
@@ -53,6 +53,9 @@ services:
 networks:
   backend:
     driver: bridge
+    ipam:
+      config:
+        - subnet: "172.18.0.0/16"
 
 volumes:
   rabbitmq_data:

@@ -15,7 +15,7 @@ public class HelloWorld
 {
     public static async Task Main(string[] args)
     {
-        using var store = DocumentStore.For("Host=172.19.0.2;Port=5432;Username=myuser;Password=mypassword;Database=test");
+        using var store = DocumentStore.For("Host=172.18.0.2;Port=5432;Username=myuser;Password=mypassword;Database=test");
 
         var session = store.LightweightSession(System.Data.IsolationLevel.ReadCommitted);
 
@@ -24,7 +24,7 @@ public class HelloWorld
         rabbitMqFactory.UserName = "guest";
         rabbitMqFactory.Password = "password";
         rabbitMqFactory.VirtualHost = "/";
-        rabbitMqFactory.HostName = "172.19.0.3";
+        rabbitMqFactory.HostName = "172.18.0.3";
         rabbitMqFactory.Port = 5672;
         var conn = rabbitMqFactory.CreateConnection();
 

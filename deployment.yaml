@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: tcp-server-chat-application
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: tcp-server-chat-application
@@ -38,7 +38,7 @@ kind: Deployment
 metadata:
   name: rabbit-mq-server
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       rabbitmq: rabbit-mq-server
@@ -120,6 +120,14 @@ spec:
           image: postgresql-database:latest
           ports:
             - containerPort: 5432
+          volumeMounts:
+          - mountPath: /example-mount-path
+            name: example-volume
+      volumes:
+        - name: example-volume
+          hostPath:
+            path: /data/storagedata
+            type: DirectoryOrCreate
 ---
 apiVersion: v1
 kind: Service
