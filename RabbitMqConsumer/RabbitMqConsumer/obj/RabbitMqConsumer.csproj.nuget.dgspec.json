@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\New folder (10)\\KubernetesTest\\RabbitMqConsumer\\RabbitMqConsumer\\RabbitMqConsumer.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\Legend\\KubernetesTest\\RabbitMqConsumer\\RabbitMqConsumer\\RabbitMqConsumer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\New folder (10)\\KubernetesTest\\RabbitMqConsumer\\RabbitMqConsumer\\RabbitMqConsumer.csproj": {
+    "C:\\Users\\Admin\\Desktop\\Legend\\KubernetesTest\\RabbitMqConsumer\\RabbitMqConsumer\\RabbitMqConsumer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\New folder (10)\\KubernetesTest\\RabbitMqConsumer\\RabbitMqConsumer\\RabbitMqConsumer.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Legend\\KubernetesTest\\RabbitMqConsumer\\RabbitMqConsumer\\RabbitMqConsumer.csproj",
         "projectName": "RabbitMqConsumer",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\New folder (10)\\KubernetesTest\\RabbitMqConsumer\\RabbitMqConsumer\\RabbitMqConsumer.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\Legend\\KubernetesTest\\RabbitMqConsumer\\RabbitMqConsumer\\RabbitMqConsumer.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\New folder (10)\\KubernetesTest\\RabbitMqConsumer\\RabbitMqConsumer\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\Legend\\KubernetesTest\\RabbitMqConsumer\\RabbitMqConsumer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

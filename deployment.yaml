@@ -1,3 +1,22 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: postgresql-credentials
+type: Opaque
+data:
+  POSTGRES_USER: bXl1c2Vy
+  POSTGRES_PASSWORD: bXlwYXNzd29yZA==
+  POSTGRES_DB: dGVzdA==
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: rabbitmq-credentials
+type: Opaque
+data:
+  username: Z3Vlc3Q=
+  password: cGFzc3dvcmQ=
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -14,9 +33,11 @@ spec:
     spec:
       containers:
         - name: tcp-server-chat-application
-          image: tcp-server-chat-application:latest
+          image: 975050152649.dkr.ecr.us-east-1.amazonaws.com/kubernetestest-application:latest
           ports:
-            - containerPort: 12345
+            - containerPort: 30000
+      imagePullSecrets:
+        - name: ecr-secret
 
 ---
 apiVersion: v1
@@ -30,7 +51,7 @@ spec:
     - protocol: TCP
       port: 80
       nodePort: 31526
-      targetPort: 12345
+      targetPort: 30000
   type: NodePort
 ---
 apiVersion: apps/v1
@@ -49,11 +70,21 @@ spec:
     spec:
       containers:
         - name: rabbit-mq-server
-          image: rabbit-mq-server:latest
+          image: "rabbitmq:3-management"
           ports:
             - containerPort: 5672
-            - containerPort: 15672            
-
+            - containerPort: 15672
+          env:
+            - name: RABBITMQ_DEFAULT_USER
+              valueFrom:
+                secretKeyRef:
+                  name: rabbitmq-credentials
+                  key: username
+            - name: RABBITMQ_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: rabbitmq-credentials
+                  key: password           
 ---
 apiVersion: v1
 kind: Service
@@ -64,7 +95,7 @@ spec:
     rabbitmq: rabbit-mq-server
   ports:
     - protocol: TCP
-      port: 80
+      port: 5672
       targetPort: 5672
   type: ClusterIP
 ---
@@ -84,9 +115,11 @@ spec:
     spec:
       containers:
         - name: app-consumer 
-          image: app-consumer:latest
+          image: 975050152649.dkr.ecr.us-east-1.amazonaws.com/kubernetestest-consumer:latest
           ports: 
             - containerPort: 12345
+      imagePullSecrets:
+        - name: ecr-secret
 ---
 apiVersion: v1
 kind: Service
@@ -117,9 +150,25 @@ spec:
     spec:
       containers:
         - name: postgresql-database
-          image: postgresql-database:latest
+          image: postgres:latest
           ports:
             - containerPort: 5432
+          env:
+            - name: POSTGRES_USER
+              valueFrom:
+                secretKeyRef:
+                  name: postgresql-credentials
+                  key: POSTGRES_USER
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: postgresql-credentials
+                  key: POSTGRES_PASSWORD
+            - name: POSTGRE_DB
+              valueFrom:
+                secretKeyRef:
+                  name: postgresql-credentials
+                  key: POSTGRES_DB
           volumeMounts:
           - mountPath: /example-mount-path
             name: example-volume
@@ -139,4 +188,5 @@ spec:
   ports:
     - protocol: TCP
       port: 5432
+      targetPort: 5432
     

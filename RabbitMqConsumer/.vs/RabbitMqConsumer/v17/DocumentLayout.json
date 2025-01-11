@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\New folder (10)\\KubernetesTest\\RabbitMqConsumer\\",
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\Legend\\KubernetesTest\\RabbitMqConsumer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E58E1917-28BD-46AC-8563-E0107EC6B6A2}|RabbitMqConsumer\\RabbitMqConsumer.csproj|c:\\users\\admin\\desktop\\new folder (10)\\kubernetestest\\rabbitmqconsumer\\rabbitmqconsumer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E58E1917-28BD-46AC-8563-E0107EC6B6A2}|RabbitMqConsumer\\RabbitMqConsumer.csproj|c:\\users\\admin\\desktop\\legend\\kubernetestest\\rabbitmqconsumer\\rabbitmqconsumer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E58E1917-28BD-46AC-8563-E0107EC6B6A2}|RabbitMqConsumer\\RabbitMqConsumer.csproj|solutionrelative:rabbitmqconsumer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -32,11 +32,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\New folder (10)\\KubernetesTest\\RabbitMqConsumer\\RabbitMqConsumer\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Legend\\KubernetesTest\\RabbitMqConsumer\\RabbitMqConsumer\\Program.cs",
               "RelativeDocumentMoniker": "RabbitMqConsumer\\Program.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\New folder (10)\\KubernetesTest\\RabbitMqConsumer\\RabbitMqConsumer\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\Legend\\KubernetesTest\\RabbitMqConsumer\\RabbitMqConsumer\\Program.cs",
               "RelativeToolTip": "RabbitMqConsumer\\Program.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAgwBoAAAAwAAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAwDAAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-08T06:50:02.329Z",
               "EditorCaption": ""
