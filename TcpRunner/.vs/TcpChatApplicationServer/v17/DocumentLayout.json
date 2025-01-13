@@ -1,0 +1,49 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\ABCDE\\KubernetesTest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|c:\\users\\admin\\desktop\\abcde\\kubernetestest\\tcpchatapplicationserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|solutionrelative:tcpchatapplicationserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:660191518:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\ABCDE\\KubernetesTest\\TcpChatApplicationServer\\Program.cs",
+              "RelativeDocumentMoniker": "TcpChatApplicationServer\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\ABCDE\\KubernetesTest\\TcpChatApplicationServer\\Program.cs",
+              "RelativeToolTip": "TcpChatApplicationServer\\Program.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-06T16:25:26.331Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
