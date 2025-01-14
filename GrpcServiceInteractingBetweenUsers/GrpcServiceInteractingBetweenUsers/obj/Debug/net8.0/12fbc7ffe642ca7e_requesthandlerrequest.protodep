@@ -1,0 +1,2 @@
+obj\Debug\net8.0\Protos/Requesthandlerrequest.cs \
+obj\Debug\net8.0\Protos/RequesthandlerrequestGrpc.cs: Protos/requesthandlerrequest.proto

@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcServiceInteractingBetweenUsers";
+
+package sendfriendrequest;
+
+// The greeting service definition.
+service SendFriendRequestHandler {
+  // Sends a greeting
+  rpc AddFriend (SendFriendRequestServiceRequest) returns (SendFriendRequestServiceResponse);
+  rpc AddFriends (stream SendFriendRequestServiceRequest) returns  (SendFriendRequestServiceResponse);
+
+  rpc DeleteFriend (SendFriendRequestServiceRequest) returns (SendFriendRequestServiceResponse);
+  rpc DeleteFriends (stream SendFriendRequestServiceRequest) returns (SendFriendRequestServiceResponse);
+
+}
+
+message SendFriendRequestServiceRequest {
+  string id = 1;
+  string message = 2;
+  string senderid = 3;
+  string receiverid = 4;
+}
+
+message SendFriendRequestServiceResponse {
+  string message = 1;
+}

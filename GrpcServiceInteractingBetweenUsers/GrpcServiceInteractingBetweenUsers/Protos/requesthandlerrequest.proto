@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+option csharp_namespace = "GrpcServiceInteractingBetweenUsers";
+
+package requesthandlerrequest;
+
+// The greeting service definition.
+service RequestHandler {
+	rpc HandlerFriend(HandlerFriendRequest) returns (HandlerFriendResponse);
+	rpc HandlerFriends(stream HandlerFriendRequest) returns (HandlerFriendResponse);
+
+	rpc GetAllRequest(GetAllRequestsRequest) returns (stream GetAllRequestsResponse);
+}
+
+message GetAllRequestsRequest {
+	string userid = 1;
+}
+
+message GetAllRequestsResponse {
+	string requestid = 1;
+	string senderid = 2;
+	string sendername = 3;
+	string message = 4;
+	string messagetype = 5;
+}
+
+message HandlerFriendRequest {
+  string requestid = 1;
+  string message = 2;
+}
+
+message HandlerFriendResponse {
+  string messageresponse = 1;
+}
