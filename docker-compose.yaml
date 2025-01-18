@@ -1,17 +1,44 @@
 version: '3.0'
 services:
-  application:
+  tcprunner:
     build: TcpRunner/TcpChatApplicationServer/.
     depends_on:
       - rabbitmq
+      - postgresql
     networks:
       - backend
     ports:
       - "30000:30000"
     environment:
       RABBITMQ_HOST: rabbitmq
-    restart: on-failure   
-  consumer:
+    restart: on-failure  
+  deletefriendsnotificationconsumers:
+    build:  DeleteFriendsNotificationConsumers/DeleteFriendsNotificationConsumers/.
+    depends_on:
+      - kafka
+      - tcprunner
+    networks:
+      - backend
+    ports:
+      - "30001:30001"
+    restart: on-failure
+  friendnotificationstableconsumers:
+    build: FriendNotificationsTableConsumers/FriendNotificationsTableConsumers/.
+    depends_on:
+      - kafka
+      - tcprunner
+    networks:
+      - backend
+    ports:
+      - "30002:30002"
+    restart: on-failure
+  grpcserviceinteractingbetweenusers:
+    build: GrpcServiceInteractingBetweenUsers/GrpcServiceInteractingBetweenUsers/.
+    networks:
+      - backend
+    ports:
+      - "30003:30003"
+  rabbitmqconsumer:
     build: RabbitMqConsumer/RabbitMqConsumer/.
     depends_on:
       - rabbitmq
@@ -19,10 +46,87 @@ services:
     networks:
       - backend
     ports:
-      - "30001:30001"
+      - "30004:30004"
     environment:
       RABBITMQ_HOST: rabbitmq
     restart: on-failure  
+  requestnotificationconsumers:
+    build: RequestNotificationConsumers/RequestNotificationConsumers/.
+    depends_on:
+      - kafka
+      - tcprunner
+    networks:
+      - backend
+    ports:
+      - "30005:30005"
+  tcpservergetaddfriendrequests:
+    build: TcpServerGetAddFriendRequests/TcpServerGetAddFriendRequests/.
+    depends_on:
+      - grpcserviceinteractingbetweenusers
+    networks:
+      - backend
+    ports:
+      - "30006:30006"
+    restart: on-failure
+  tcpservergetaddfriendsrequests:
+    build: TcpServerGetAddFriendsRequests/TcpServerGetAddFriendsRequests/.
+    depends_on:
+      - grpcserviceinteractingbetweenusers
+    networks:
+      - backend
+    ports:
+      - "30007:30007"
+    restart: on-failure
+  tcpservergetdeletefriendrequests:
+    build: TcpServerGetDeleteFriendRequests/TcpServerGetDeleteFriendRequests/.
+    depends_on:
+      - grpcserviceinteractingbetweenusers
+    networks:
+      - backend
+    ports:
+      - "30008:30008"
+    restart: on-failure
+  tcpservergetdeletefriendsrequests:
+    build: TcpServerGetDeleteFriendsRequests/TcpServerGetDeleteFriendsRequests/.
+    depends_on:
+      - grpcserviceinteractingbetweenusers
+    networks:
+      - backend
+    ports:
+      - "30009:30009"
+    restart: on-failure
+  workerapplicationfordeletefriendsnotification:
+    build: WorkerApplicationForDeleteFriendsNotification/WorkerApplicationForDeleteFriendsNotification/.
+    depends_on:
+      - kafka
+      - deletefriendsnotificationconsumers
+      - postgresql
+    networks:
+      - backend
+    ports:
+      - "30010:30010"
+  workerapplicationforfriendnotificationstable:
+    build: WorkerApplicationForFriendNotificationsTable/WorkerApplicationForFriendNotificationsTable/.
+    depends_on:
+      - kafka
+      - friendnotificationstableconsumers
+      - postgresql
+    networks:
+      - backend
+    ports:
+      - "30011:30011"
+    restart: on-failure
+  workerapplicationforrequestnotification:
+    build: WorkerApplicationForRequestNotification/WorkerApplicationForRequestNotification/.
+    depends_on:
+      - kafka
+      - requestnotificationconsumers
+      - postgresql
+    networks:
+      - backend
+    ports:
+      - "30012:30012"
+    restart: on-failure
   postgresql:
     image: postgres:latest
     container_name: postgres_container    
@@ -59,7 +163,6 @@ services:
       - 22181:2181
     networks:
       - backend
-  
   kafka:
     image: confluentinc/cp-kafka:latest
     restart: always

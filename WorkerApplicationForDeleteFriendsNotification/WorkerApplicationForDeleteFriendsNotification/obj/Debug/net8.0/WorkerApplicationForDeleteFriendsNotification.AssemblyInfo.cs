@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WorkerApplicationForDeleteFriendsNotification")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d95fe97f5c0d604f1d12d69b0eaaf4a73993285")]
 [assembly: System.Reflection.AssemblyProductAttribute("WorkerApplicationForDeleteFriendsNotification")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WorkerApplicationForDeleteFriendsNotification")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

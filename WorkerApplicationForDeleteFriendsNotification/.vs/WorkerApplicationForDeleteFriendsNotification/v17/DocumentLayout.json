@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\chaung\\source\\repos\\WorkerApplicationForDeleteFriendsNotification\\",
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\fdfdsfsds\\KubernetesTest\\WorkerApplicationForDeleteFriendsNotification\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D786A05D-CA95-4F16-94D9-E9A19D7968D4}|WorkerApplicationForDeleteFriendsNotification\\WorkerApplicationForDeleteFriendsNotification.csproj|c:\\users\\chaung\\source\\repos\\workerapplicationfordeletefriendsnotification\\workerapplicationfordeletefriendsnotification\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D786A05D-CA95-4F16-94D9-E9A19D7968D4}|WorkerApplicationForDeleteFriendsNotification\\WorkerApplicationForDeleteFriendsNotification.csproj|c:\\users\\admin\\desktop\\fdfdsfsds\\kubernetestest\\workerapplicationfordeletefriendsnotification\\workerapplicationfordeletefriendsnotification\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D786A05D-CA95-4F16-94D9-E9A19D7968D4}|WorkerApplicationForDeleteFriendsNotification\\WorkerApplicationForDeleteFriendsNotification.csproj|solutionrelative:workerapplicationfordeletefriendsnotification\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,24 +18,38 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\chaung\\source\\repos\\WorkerApplicationForDeleteFriendsNotification\\WorkerApplicationForDeleteFriendsNotification\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\fdfdsfsds\\KubernetesTest\\WorkerApplicationForDeleteFriendsNotification\\WorkerApplicationForDeleteFriendsNotification\\Program.cs",
               "RelativeDocumentMoniker": "WorkerApplicationForDeleteFriendsNotification\\Program.cs",
-              "ToolTip": "C:\\Users\\chaung\\source\\repos\\WorkerApplicationForDeleteFriendsNotification\\WorkerApplicationForDeleteFriendsNotification\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\fdfdsfsds\\KubernetesTest\\WorkerApplicationForDeleteFriendsNotification\\WorkerApplicationForDeleteFriendsNotification\\Program.cs",
               "RelativeToolTip": "WorkerApplicationForDeleteFriendsNotification\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAowCsAAABcAAAAAAAAAA==",
+              "ViewState": "AQIAABQAAAAAAAAAAAAswBsAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-16T08:14:37.564Z",
               "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:660191518:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             }
           ]
         }
