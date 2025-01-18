@@ -1,0 +1,93 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\New folder (4)\\TcpServerGetDeleteFriendsRequests\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F269A8-4AAB-4EFD-B33C-0A7EF8BD7687}|TcpServerGetDeleteFriendsRequests\\TcpServerGetDeleteFriendsRequests.csproj|C:\\Users\\Admin\\Desktop\\New folder (4)\\TcpServerGetDeleteFriendsRequests\\tcpservergetdeletefriendsrequests\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4F269A8-4AAB-4EFD-B33C-0A7EF8BD7687}|TcpServerGetDeleteFriendsRequests\\TcpServerGetDeleteFriendsRequests.csproj|solutionrelative:tcpservergetdeletefriendsrequests\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F269A8-4AAB-4EFD-B33C-0A7EF8BD7687}|TcpServerGetDeleteFriendsRequests\\TcpServerGetDeleteFriendsRequests.csproj|C:\\Users\\Admin\\Desktop\\New folder (4)\\TcpServerGetDeleteFriendsRequests\\tcpservergetdeletefriendsrequests\\tcpservergetdeletefriendsrequests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A4F269A8-4AAB-4EFD-B33C-0A7EF8BD7687}|TcpServerGetDeleteFriendsRequests\\TcpServerGetDeleteFriendsRequests.csproj|solutionrelative:tcpservergetdeletefriendsrequests\\tcpservergetdeletefriendsrequests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4F269A8-4AAB-4EFD-B33C-0A7EF8BD7687}|TcpServerGetDeleteFriendsRequests\\TcpServerGetDeleteFriendsRequests.csproj|c:\\users\\admin\\desktop\\new folder (4)\\tcpservergetdeletefriendsrequests\\tcpservergetdeletefriendsrequests\\protos\\sendfriendrequest.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A4F269A8-4AAB-4EFD-B33C-0A7EF8BD7687}|TcpServerGetDeleteFriendsRequests\\TcpServerGetDeleteFriendsRequests.csproj|solutionrelative:tcpservergetdeletefriendsrequests\\protos\\sendfriendrequest.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "sendfriendrequest.proto",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\New folder (4)\\TcpServerGetDeleteFriendsRequests\\TcpServerGetDeleteFriendsRequests\\Protos\\sendfriendrequest.proto",
+              "RelativeDocumentMoniker": "TcpServerGetDeleteFriendsRequests\\Protos\\sendfriendrequest.proto",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\New folder (4)\\TcpServerGetDeleteFriendsRequests\\TcpServerGetDeleteFriendsRequests\\Protos\\sendfriendrequest.proto",
+              "RelativeToolTip": "TcpServerGetDeleteFriendsRequests\\Protos\\sendfriendrequest.proto",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
+              "WhenOpened": "2025-01-18T03:46:06.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TcpServerGetDeleteFriendsRequests.csproj",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\New folder (4)\\TcpServerGetDeleteFriendsRequests\\TcpServerGetDeleteFriendsRequests\\TcpServerGetDeleteFriendsRequests.csproj",
+              "RelativeDocumentMoniker": "TcpServerGetDeleteFriendsRequests\\TcpServerGetDeleteFriendsRequests.csproj",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\New folder (4)\\TcpServerGetDeleteFriendsRequests\\TcpServerGetDeleteFriendsRequests\\TcpServerGetDeleteFriendsRequests.csproj",
+              "RelativeToolTip": "TcpServerGetDeleteFriendsRequests\\TcpServerGetDeleteFriendsRequests.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-18T03:44:40.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\New folder (4)\\TcpServerGetDeleteFriendsRequests\\TcpServerGetDeleteFriendsRequests\\Program.cs",
+              "RelativeDocumentMoniker": "TcpServerGetDeleteFriendsRequests\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\New folder (4)\\TcpServerGetDeleteFriendsRequests\\TcpServerGetDeleteFriendsRequests\\Program.cs",
+              "RelativeToolTip": "TcpServerGetDeleteFriendsRequests\\Program.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAAwB0AAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-18T03:24:05.655Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:660191518:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 using Dapper;
 using Grpc.Core;
 using GrpcServiceInteractingBetweenUsers;
+using GrpcServiceInteractingBetweenUsers.Extensions;
 using GrpcServiceInteractingBetweenUsers.Models;
 using Npgsql;
 
@@ -19,22 +20,27 @@ namespace GrpcServiceInteractingBetweenUsers.Services
             var handlerFriendResponse = new HandlerFriendResponse();
             if (request.Message == "Accept")
             {
-                using (var connection = new NpgsqlConnection("Host=localhost;Username=postgres;Password=rsoOPR45;Database=SocialDatabase"))
+                using (var connection = new NpgsqlConnection("Host=10.99.62.254;Username=postgres;Password=Bu6!ERGA@2024;Database=SocialDatabase"))
                 {
+                    connection.Open();
                     using (var transaction = connection.BeginTransaction(System.Data.IsolationLevel.ReadCommitted))
                     {
-                        var requestQuery = "SELECT * FROM RequestsTable WHERE id = @Id";
+                        var requestQuery = "SELECT * FROM \"RequestsTable\" WHERE \"Id\" = CAST(@Id AS uuid)";
                         var requestModel = connection.QuerySingle<RequestModel>(requestQuery, new { Id = request.Requestid });
 
-                        var insertFriendTableSql = "INSERT INTO FriendsTable (Id, SenderId, ReceiverId) VALUES (@Id, @SenderId, @ReceiverId)";
+                        var getNotificationTableQuery = "SELECT \"NotificationTable\" FROM \"NotificationEventsTable\" WHERE \"CallEvent\" = 'HandlerFriendRequest'";
+                        var notificationTableModels = connection.Query<string>(getNotificationTableQuery);
+
+                        var insertFriendTableSql = "INSERT INTO \"FriendsTable\" (\"Id\", \"SenderId\", \"ReceiverId\") VALUES (@Id, @SenderId, @ReceiverId)";
                         var insertedRecord = new FriendModel() { Id = Guid.NewGuid(), SenderId = requestModel.SenderId, ReceiverId = requestModel.ReceiverId };
                         connection.Execute(insertFriendTableSql, insertedRecord);
 
-                        var insertFriendNotificationTableSql = "INSERT INTO FriendNotificationsTable (Id, SenderId, ReceiverId, Status) VALUES (@Id, @SenderId, @ReceiverId, @Status)";
-                        var insertedNotificationRecord = new FriendModel() { Id = Guid.NewGuid(), SenderId = requestModel.SenderId, ReceiverId = requestModel.ReceiverId, Status = "Accepted" };
-                        connection.Execute(insertFriendNotificationTableSql, insertedNotificationRecord);
+                        foreach (var notificationModel in notificationTableModels)
+                        {
+                            InsertRecordToDatabase.InsertToNotificationTable(connection, requestModel, notificationModel);
+                        }
 
-                        var deleteFriendTableSql = "DELETE FROM RequestsTable WHERE Id = @Id";
+                        var deleteFriendTableSql = "DELETE FROM \"RequestsTable\" WHERE \"Id\" = CAST(@Id AS uuid)";
                         var deletedRecord = new FriendModel() { Id = new Guid(request.Requestid) };
                         connection.Execute(deleteFriendTableSql, deletedRecord);
                         transaction.Commit();
@@ -44,18 +50,23 @@ namespace GrpcServiceInteractingBetweenUsers.Services
             }
             else if (request.Message == "Refuse")
             {
-                using (var connection = new NpgsqlConnection("Host=localhost;Username=postgres;Password=rsoOPR45;Database=SocialDatabase"))
+                using (var connection = new NpgsqlConnection("Host=10.99.62.254;Username=postgres;Password=Bu6!ERGA@2024;Database=SocialDatabase"))
                 {
+                    connection.Open();
                     using (var transaction = connection.BeginTransaction(System.Data.IsolationLevel.ReadCommitted))
                     {
-                        var requestQuery = "SELECT * FROM RequestsTable WHERE id = @Id";
+                        var requestQuery = "SELECT * FROM \"RequestsTable\" WHERE \"Id\" = CAST(@Id AS uuid)";
                         var requestModel = connection.QuerySingle<RequestModel>(requestQuery, new { Id = request.Requestid });
 
-                        var insertFriendNotificationTableSql = "INSERT INTO FriendNotificationsTable (Id, SenderId, ReceiverId, Status) VALUES (@Id, @SenderId, @ReceiverId, @Status)";
-                        var insertedNotificationRecord = new FriendModel() { Id = Guid.NewGuid(), SenderId = requestModel.SenderId, ReceiverId = requestModel.ReceiverId, Status = "Refused" };
-                        connection.Execute(insertFriendNotificationTableSql, insertedNotificationRecord);
+                        var getNotificationTableQuery = "SELECT \"NotificationTable\" FROM \"NotificationEventsTable\" WHERE \"CalLEvent\" = 'HandlerFriendRequest'";
+                        var notificationTableModels = connection.Query<string>(getNotificationTableQuery);
 
-                        var deleteFriendTableSql = "DELETE FROM RequestsTable WHERE Id = @Id";
+                        foreach (var notificationModel in notificationTableModels)
+                        {
+                            InsertRecordToDatabase.InsertToNotificationTable(connection, requestModel, notificationModel);
+                        }
+
+                        var deleteFriendTableSql = "DELETE FROM \"RequestsTable\" WHERE \"Id\" = CAST(@Id AS uuid)";
                         var deletedRecord = new FriendModel() { Id = new Guid(request.Requestid) };
                         connection.Execute(deleteFriendTableSql, deletedRecord);
                         transaction.Commit();
@@ -70,39 +81,48 @@ namespace GrpcServiceInteractingBetweenUsers.Services
         {
             var handlerFriendResponse = new HandlerFriendResponse();
             handlerFriendResponse.Messageresponse = "Fail";
-            using (var connection = new NpgsqlConnection("Host=localhost;Username=postgres;Password=rsoOPR45;Database=SocialDatabase"))
+            using (var connection = new NpgsqlConnection("Host=10.99.62.254;Username=postgres;Password=Bu6!ERGA@2024;Database=SocialDatabase"))
             {
+                connection.Open();
                 using (var transaction = connection.BeginTransaction(System.Data.IsolationLevel.ReadCommitted))
                 {
                     await foreach (var requestHandler in requestStream.ReadAllAsync())
                     {
                         if (requestHandler.Message == "Accept")
                         {
-                            var requestQuery = "SELECT * FROM RequestsTable WHERE id = @Id";
+                            var requestQuery = "SELECT * FROM \"RequestsTable\" WHERE \"Id\" = CAST(@Id AS uuid)";
                             var requestModel = connection.QuerySingle<RequestModel>(requestQuery, new { Id = requestHandler.Requestid });
 
-                            var insertFriendTableSql = "INSERT INTO FriendsTable (Id, SenderId, ReceiverId) VALUES (@Id, @SenderId, @ReceiverId)";
+                            var insertFriendTableSql = "INSERT INTO \"FriendsTable\" (\"Id\", \"SenderId\", \"ReceiverId\") VALUES (@Id, @SenderId, @ReceiverId)";
                             var insertedRecord = new FriendModel() { Id = Guid.NewGuid(), SenderId = requestModel.SenderId, ReceiverId = requestModel.ReceiverId };
                             connection.Execute(insertFriendTableSql, insertedRecord);
 
-                            var insertFriendNotificationTableSql = "INSERT INTO FriendNotificationsTable (Id, SenderId, ReceiverId, Status) VALUES (@Id, @SenderId, @ReceiverId, @Status)";
-                            var insertedNotificationRecord = new FriendModel() { Id = Guid.NewGuid(), SenderId = requestModel.SenderId, ReceiverId = requestModel.ReceiverId, Status = "Accepted" };
-                            connection.Execute(insertFriendNotificationTableSql, insertedNotificationRecord);
+                            var getNotificationTableQuery = "SELECT \"NotificationTable\" FROM \"NotificationEventsTable\" WHERE \"CallEvent\" = 'HandlerFriendRequest'";
+                            var notificationTableModels = connection.Query<string>(getNotificationTableQuery);
 
-                            var deleteFriendTableSql = "DELETE FROM RequestsTable WHERE Id = @Id";
+                            foreach (var notificationModel in notificationTableModels)
+                            {
+                                InsertRecordToDatabase.InsertToNotificationTable(connection, requestModel, notificationModel);
+                            }
+
+                            var deleteFriendTableSql = "DELETE FROM \"RequestsTable\" WHERE \"Id\" = CAST(@Id AS uuid)";
                             var deletedRecord = new FriendModel() { Id = new Guid(requestHandler.Requestid) };
                             connection.Execute(deleteFriendTableSql, deletedRecord);
                         }
                         else if (requestHandler.Message == "Refuse")
                         {
-                            var requestQuery = "SELECT * FROM RequestsTable WHERE id = @Id";
+                            var requestQuery = "SELECT * FROM \"RequestsTable\" WHERE \"Id\" = CAST(@Id AS uuid)";
                             var requestModel = connection.QuerySingle<RequestModel>(requestQuery, new { Id = requestHandler.Requestid });
 
-                            var insertFriendNotificationTableSql = "INSERT INTO FriendNotificationsTable (Id, SenderId, ReceiverId, Status) VALUES (@Id, @SenderId, @ReceiverId, @Status)";
-                            var insertedNotificationRecord = new FriendModel() { Id = Guid.NewGuid(), SenderId = requestModel.SenderId, ReceiverId = requestModel.ReceiverId, Status = "Refused" };
-                            connection.Execute(insertFriendNotificationTableSql, insertedNotificationRecord);
+                            var getNotificationTableQuery = "SELECT \"NotificationTable\" FROM \"NotificationEventsTable\" WHERE \"CallEvent\" = 'HandlerFriendRequest'";
+                            var notificationTableModels = connection.Query<string>(getNotificationTableQuery);
 
-                            var deleteFriendTableSql = "DELETE FROM RequestsTable WHERE Id = @Id";
+                            foreach (var notificationModel in notificationTableModels)
+                            {
+                                InsertRecordToDatabase.InsertToNotificationTable(connection, requestModel, notificationModel);
+                            }
+
+                            var deleteFriendTableSql = "DELETE FROM \"RequestsTable\" WHERE \"Id\" = CAST(@Id AS uuid)";
                             var deletedRecord = new FriendModel() { Id = new Guid(requestHandler.Requestid) };
                             connection.Execute(deleteFriendTableSql, deletedRecord);
                         }
@@ -116,9 +136,9 @@ namespace GrpcServiceInteractingBetweenUsers.Services
 
         public override async Task GetAllRequest(GetAllRequestsRequest request, IServerStreamWriter<GetAllRequestsResponse> response, ServerCallContext context)
         {
-            using (var connection = new NpgsqlConnection("Host=localhost;Username=postgres;Password=rsoOPR45;Database=SocialDatabase"))
+            using (var connection = new NpgsqlConnection("Host=10.99.62.254;Username=postgres;Password=Bu6!ERGA@2024;Database=SocialDatabase"))
             {
-                var requestQuery = "SELECT * FROM RequestsTable WHERE UserId = @UserId";
+                var requestQuery = "SELECT * FROM \"RequestsTable\" WHERE \"SenderId\" = CAST(@UserId AS uuid)";
                 var requestModels = connection.Query<RequestModel>(requestQuery, new { UserId = request.Userid });
                 foreach (var requestModel in requestModels)
                 {

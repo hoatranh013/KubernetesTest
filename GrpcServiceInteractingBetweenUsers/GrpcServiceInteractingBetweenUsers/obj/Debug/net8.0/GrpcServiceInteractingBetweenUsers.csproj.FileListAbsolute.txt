@@ -36,3 +36,46 @@ C:\Users\Admin\Desktop\New folder (4)\GrpcServiceInteractingBetweenUsers\GrpcSer
 C:\Users\Admin\Desktop\New folder (4)\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\Admin\Desktop\New folder (4)\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\Admin\Desktop\New folder (4)\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\bin\Debug\net8.0\Npgsql.dll
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\bin\Debug\net8.0\appsettings.json
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\bin\Debug\net8.0\GrpcServiceInteractingBetweenUsers.staticwebassets.endpoints.json
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\bin\Debug\net8.0\GrpcServiceInteractingBetweenUsers.exe
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\bin\Debug\net8.0\GrpcServiceInteractingBetweenUsers.deps.json
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\bin\Debug\net8.0\GrpcServiceInteractingBetweenUsers.runtimeconfig.json
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\bin\Debug\net8.0\GrpcServiceInteractingBetweenUsers.dll
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\bin\Debug\net8.0\GrpcServiceInteractingBetweenUsers.pdb
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\bin\Debug\net8.0\Dapper.dll
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\bin\Debug\net8.0\Grpc.AspNetCore.Server.dll
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\bin\Debug\net8.0\Grpc.AspNetCore.Server.ClientFactory.dll
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\bin\Debug\net8.0\Grpc.Core.Api.dll
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\bin\Debug\net8.0\Grpc.Net.Client.dll
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\bin\Debug\net8.0\Grpc.Net.ClientFactory.dll
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\bin\Debug\net8.0\Grpc.Net.Common.dll
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\bin\Debug\net8.0\Npgsql.dll
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\obj\Debug\net8.0\GrpcServiceInteractingBetweenUsers.csproj.AssemblyReference.cache
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\obj\Debug\net8.0\GrpcServiceInteractingBetweenUsers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\obj\Debug\net8.0\GrpcServiceInteractingBetweenUsers.AssemblyInfoInputs.cache
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\obj\Debug\net8.0\GrpcServiceInteractingBetweenUsers.AssemblyInfo.cs
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\obj\Debug\net8.0\GrpcServiceInteractingBetweenUsers.csproj.CoreCompileInputs.cache
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\obj\Debug\net8.0\GrpcServiceInteractingBetweenUsers.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\obj\Debug\net8.0\GrpcServiceInteractingBetweenUsers.sourcelink.json
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\obj\Debug\net8.0\scopedcss\bundle\GrpcServiceInteractingBetweenUsers.styles.css
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\obj\Debug\net8.0\staticwebassets\msbuild.GrpcServiceInteractingBetweenUsers.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\obj\Debug\net8.0\staticwebassets\msbuild.GrpcServiceInteractingBetweenUsers.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\obj\Debug\net8.0\staticwebassets\msbuild.build.GrpcServiceInteractingBetweenUsers.props
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.GrpcServiceInteractingBetweenUsers.props
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.GrpcServiceInteractingBetweenUsers.props
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\obj\Debug\net8.0\GrpcServ.7CD4B535.Up2Date
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\obj\Debug\net8.0\GrpcServiceInteractingBetweenUsers.dll
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\obj\Debug\net8.0\refint\GrpcServiceInteractingBetweenUsers.dll
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\obj\Debug\net8.0\GrpcServiceInteractingBetweenUsers.pdb
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\obj\Debug\net8.0\GrpcServiceInteractingBetweenUsers.genruntimeconfig.cache
+C:\Users\chaung\Desktop\New folder\KubernetesTest\GrpcServiceInteractingBetweenUsers\GrpcServiceInteractingBetweenUsers\obj\Debug\net8.0\ref\GrpcServiceInteractingBetweenUsers.dll

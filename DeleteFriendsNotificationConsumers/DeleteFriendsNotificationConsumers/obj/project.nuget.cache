@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "ofRW2qL1h6nY5czAY67tBJJkBivCoAiHedSOW+D30yjk7QPI0IF4uAidPB6VVCXhFpRzhYiLeX8yi7ZksUle7g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\DeleteFriendsNotificationConsumers\\DeleteFriendsNotificationConsumers\\DeleteFriendsNotificationConsumers.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\confluent.kafka\\2.8.0\\confluent.kafka.2.8.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\librdkafka.redist\\2.8.0\\librdkafka.redist.2.8.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

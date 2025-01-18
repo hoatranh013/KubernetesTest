@@ -1,0 +1,2 @@
+obj\Debug\net8.0\Protos/Sendfriendrequest.cs \
+obj\Debug\net8.0\Protos/SendfriendrequestGrpc.cs: Protos/sendfriendrequest.proto
