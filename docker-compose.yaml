@@ -14,10 +14,10 @@ services:
     environment:
       RABBITMQ_HOST: rabbitmq
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:30000/health"]
+      test: ["CMD", "curl", "-f", "http://tcprunner:30000/health"]
       interval: 30s
       timeout: 60s
-      retries: 5
+      retries: 1
       start_period: 30s
     restart: on-failure  
   deletefriendsnotificationconsumers:
@@ -28,10 +28,10 @@ services:
       tcprunner:
         condition: service_healthy
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:30001/health"]
+      test: ["CMD", "curl", "-f", "http://deletefriendsnotificationconsumers:30001/health"]
       interval: 30s
       timeout: 60s
-      retries: 5
+      retries: 1
       start_period: 30s
     networks:
       - backend
@@ -46,10 +46,10 @@ services:
       tcprunner:
         condition: service_healthy
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:30002/health"]
+      test: ["CMD", "curl", "-f", "http://friendnotificationstableconsumers:30002/health"]
       interval: 30s
       timeout: 60s
-      retries: 5
+      retries: 1
       start_period: 30s
     networks:
       - backend
@@ -66,10 +66,10 @@ services:
       postgresql:
         condition: service_healthy
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:30003/health"]
+      test: ["CMD", "curl", "-f", "http://grpcserviceinteractingbetweenusers:30003/health"]
       interval: 30s
       timeout: 60s
-      retries: 5
+      retries: 1
       start_period: 30s
   rabbitmqconsumer:
     build: RabbitMqConsumer/RabbitMqConsumer/.
@@ -79,10 +79,10 @@ services:
       postgresql:
         condition: service_healthy
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:30004/health"]
+      test: ["CMD", "curl", "-f", "http://rabbitmqconsumer:30004/health"]
       interval: 30s
       timeout: 60s
-      retries: 5
+      retries: 1
       start_period: 30s
     networks:
       - backend
@@ -99,10 +99,10 @@ services:
       tcprunner:
         condition: service_healthy
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:30005/health"]
+      test: ["CMD", "curl", "-f", "http://requestnotificationconsumers:30005/health"]
       interval: 30s
       timeout: 60s
-      retries: 5
+      retries: 1
       start_period: 30s
     networks:
       - backend
@@ -200,7 +200,7 @@ services:
       test: ["CMD", "psql", "-U", "myuser", "-d", "test", "-c", "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'public' AND table_type = 'BASE TABLE' HAVING count(*) >= 6;"]
       interval: 10s
       timeout: 60s
-      retries: 5
+      retries: 1
       start_period: 10s
     ports:
       - "5432:5432"
@@ -217,10 +217,10 @@ services:
       RABBITMQ_DEFAULT_USER: guest
       RABBITMQ_DEFAULT_PASS: password
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://guest:password@localhost:15672/api/overview"]
+      test: ["CMD", "curl", "-f", "http://guest:password@rabbitmq:15672/api/overview"]
       interval: 10s
       timeout: 60s
-      retries: 5
+      retries: 1
       start_period: 10s
     volumes:
       - rabbitmq_data:/var/lib/rabbitmq
@@ -234,10 +234,10 @@ services:
       ZOOKEEPER_CLIENT_PORT: 2181
       ZOOKEEPER_TICK_TIME: 2000
     healthcheck:
-      test: ["CMD", "nc", "-z", "localhost", "2181"]
+      test: ["CMD", "nc", "-z", "zookeeper", "2181"]
       interval: 10s
       timeout: 60s
-      retries: 5
+      retries: 1
       start_period: 10s
     ports:
       - 22181:2181
@@ -254,15 +254,15 @@ services:
     environment:
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,PLAINTEXT_HOST://localhost:29092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,PLAINTEXT_HOST://kafka:29092
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
       KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
     healthcheck:
-      test: ["CMD", "kafka-topics.sh", "--bootstrap-server", "localhost:29092", "--list", "|", "grep", "DeleteFriendsNotification", "|", "grep", "FriendNotificationsTable", "|", "grep", "RequestsTableNotificationTopic"]
+      test: ["CMD", "kafka-topics.sh", "--bootstrap-server", "kafka:29092", "--list", "|", "grep", "DeleteFriendsNotification", "|", "grep", "FriendNotificationsTable", "|", "grep", "RequestsTableNotificationTopic"]
       interval: 10s
       timeout: 60s
-      retries: 5
+      retries: 1
       start_period: 10s
     networks:
       - backend
