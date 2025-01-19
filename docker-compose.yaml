@@ -3,20 +3,36 @@ services:
   tcprunner:
     build: TcpRunner/TcpChatApplicationServer/.
     depends_on:
-      - rabbitmq
-      - postgresql
+      rabbitmq:
+        condition: service_healthy
+      postgresql:
+        condition: service_healthy
     networks:
       - backend
     ports:
       - "30000:30000"
     environment:
       RABBITMQ_HOST: rabbitmq
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:30000/health"]
+      interval: 30s
+      timeout: 60s
+      retries: 5
+      start_period: 30s
     restart: on-failure  
   deletefriendsnotificationconsumers:
     build:  DeleteFriendsNotificationConsumers/DeleteFriendsNotificationConsumers/.
     depends_on:
-      - kafka
-      - tcprunner
+      kafka:
+        condition: service_healthy
+      tcprunner:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:30001/health"]
+      interval: 30s
+      timeout: 60s
+      retries: 5
+      start_period: 30s
     networks:
       - backend
     ports:
@@ -25,8 +41,16 @@ services:
   friendnotificationstableconsumers:
     build: FriendNotificationsTableConsumers/FriendNotificationsTableConsumers/.
     depends_on:
-      - kafka
-      - tcprunner
+      kafka:
+        condition: service_healthy
+      tcprunner:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:30002/health"]
+      interval: 30s
+      timeout: 60s
+      retries: 5
+      start_period: 30s
     networks:
       - backend
     ports:
@@ -38,11 +62,28 @@ services:
       - backend
     ports:
       - "30003:30003"
+    depends_on:
+      postgresql:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:30003/health"]
+      interval: 30s
+      timeout: 60s
+      retries: 5
+      start_period: 30s
   rabbitmqconsumer:
     build: RabbitMqConsumer/RabbitMqConsumer/.
     depends_on:
-      - rabbitmq
-      - postgresql
+      rabbitmq:
+        condition: service_healthy
+      postgresql:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:30004/health"]
+      interval: 30s
+      timeout: 60s
+      retries: 5
+      start_period: 30s
     networks:
       - backend
     ports:
@@ -53,8 +94,16 @@ services:
   requestnotificationconsumers:
     build: RequestNotificationConsumers/RequestNotificationConsumers/.
     depends_on:
-      - kafka
-      - tcprunner
+      kafka:
+        condition: service_healthy
+      tcprunner:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:30005/health"]
+      interval: 30s
+      timeout: 60s
+      retries: 5
+      start_period: 30s
     networks:
       - backend
     ports:
@@ -62,7 +111,8 @@ services:
   tcpservergetaddfriendrequests:
     build: TcpServerGetAddFriendRequests/TcpServerGetAddFriendRequests/.
     depends_on:
-      - grpcserviceinteractingbetweenusers
+      grpcserviceinteractingbetweenusers:
+        condition: service_healthy
     networks:
       - backend
     ports:
@@ -71,7 +121,8 @@ services:
   tcpservergetaddfriendsrequests:
     build: TcpServerGetAddFriendsRequests/TcpServerGetAddFriendsRequests/.
     depends_on:
-      - grpcserviceinteractingbetweenusers
+      grpcserviceinteractingbetweenusers:
+        condition: service_healthy
     networks:
       - backend
     ports:
@@ -80,7 +131,8 @@ services:
   tcpservergetdeletefriendrequests:
     build: TcpServerGetDeleteFriendRequests/TcpServerGetDeleteFriendRequests/.
     depends_on:
-      - grpcserviceinteractingbetweenusers
+      grpcserviceinteractingbetweenusers:
+        condition: service_healthy
     networks:
       - backend
     ports:
@@ -89,7 +141,8 @@ services:
   tcpservergetdeletefriendsrequests:
     build: TcpServerGetDeleteFriendsRequests/TcpServerGetDeleteFriendsRequests/.
     depends_on:
-      - grpcserviceinteractingbetweenusers
+      grpcserviceinteractingbetweenusers:
+        condition: service_healthy
     networks:
       - backend
     ports:
@@ -98,9 +151,12 @@ services:
   workerapplicationfordeletefriendsnotification:
     build: WorkerApplicationForDeleteFriendsNotification/WorkerApplicationForDeleteFriendsNotification/.
     depends_on:
-      - kafka
-      - deletefriendsnotificationconsumers
-      - postgresql
+      kafka:
+        condition: service_healthy
+      deletefriendsnotificationconsumers:
+        condition: service_healthy
+      postgresql:
+        condition: service_healthy
     networks:
       - backend
     ports:
@@ -108,9 +164,12 @@ services:
   workerapplicationforfriendnotificationstable:
     build: WorkerApplicationForFriendNotificationsTable/WorkerApplicationForFriendNotificationsTable/.
     depends_on:
-      - kafka
-      - friendnotificationstableconsumers
-      - postgresql
+      kafka:
+        condition: service_healthy
+      friendnotificationstableconsumers:
+        condition: service_healthy
+      postgresql:
+        condition: service_healthy
     networks:
       - backend
     ports:
@@ -119,9 +178,12 @@ services:
   workerapplicationforrequestnotification:
     build: WorkerApplicationForRequestNotification/WorkerApplicationForRequestNotification/.
     depends_on:
-      - kafka
-      - requestnotificationconsumers
-      - postgresql
+      kafka:
+        condition: service_healthy
+      requestnotificationconsumers:
+        condition: service_healthy
+      postgresql:
+        condition: service_healthy
     networks:
       - backend
     ports:
@@ -134,6 +196,12 @@ services:
       POSTGRES_USER: myuser
       POSTGRES_PASSWORD: mypassword
       POSTGRES_DB: test
+    healthcheck:
+      test: ["CMD", "psql", "-U", "myuser", "-d", "test", "-c", "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'public' AND table_type = 'BASE TABLE' HAVING count(*) >= 6;"]
+      interval: 10s
+      timeout: 60s
+      retries: 5
+      start_period: 10s
     ports:
       - "5432:5432"
     networks:
@@ -148,6 +216,12 @@ services:
     environment:
       RABBITMQ_DEFAULT_USER: guest
       RABBITMQ_DEFAULT_PASS: password
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://guest:password@localhost:15672/api/overview"]
+      interval: 10s
+      timeout: 60s
+      retries: 5
+      start_period: 10s
     volumes:
       - rabbitmq_data:/var/lib/rabbitmq
       - rabbitmq_config:/etc/rabbitmq
@@ -159,6 +233,12 @@ services:
     environment:
       ZOOKEEPER_CLIENT_PORT: 2181
       ZOOKEEPER_TICK_TIME: 2000
+    healthcheck:
+      test: ["CMD", "nc", "-z", "localhost", "2181"]
+      interval: 10s
+      timeout: 60s
+      retries: 5
+      start_period: 10s
     ports:
       - 22181:2181
     networks:
@@ -167,7 +247,8 @@ services:
     image: confluentinc/cp-kafka:latest
     restart: always
     depends_on:
-      - zookeeper
+      zookeeper:
+        condition: service_healthy
     ports:
       - 29092:29092
     environment:
@@ -177,6 +258,12 @@ services:
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
       KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    healthcheck:
+      test: ["CMD", "kafka-topics.sh", "--bootstrap-server", "localhost:29092", "--list", "|", "grep", "DeleteFriendsNotification", "|", "grep", "FriendNotificationsTable", "|", "grep", "RequestsTableNotificationTopic"]
+      interval: 10s
+      timeout: 60s
+      retries: 5
+      start_period: 10s
     networks:
       - backend
 
