@@ -1,41 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\chaung\\Desktop\\New folder\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\",
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|c:\\users\\chaung\\desktop\\new folder\\kubernetestest\\grpcserviceinteractingbetweenusers\\grpcserviceinteractingbetweenusers\\services\\sendfriendrequesthandlerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|solutionrelative:grpcserviceinteractingbetweenusers\\services\\sendfriendrequesthandlerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|c:\\users\\chaung\\desktop\\new folder\\kubernetestest\\grpcserviceinteractingbetweenusers\\grpcserviceinteractingbetweenusers\\extensions\\insertrecordtodatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|solutionrelative:grpcserviceinteractingbetweenusers\\extensions\\insertrecordtodatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|c:\\users\\chaung\\desktop\\new folder\\kubernetestest\\grpcserviceinteractingbetweenusers\\grpcserviceinteractingbetweenusers\\services\\requesthandlerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|solutionrelative:grpcserviceinteractingbetweenusers\\services\\requesthandlerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|c:\\users\\chaung\\desktop\\new folder\\kubernetestest\\grpcserviceinteractingbetweenusers\\grpcserviceinteractingbetweenusers\\models\\friendmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|solutionrelative:grpcserviceinteractingbetweenusers\\models\\friendmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|c:\\users\\chaung\\desktop\\new folder\\kubernetestest\\grpcserviceinteractingbetweenusers\\grpcserviceinteractingbetweenusers\\models\\requestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|solutionrelative:grpcserviceinteractingbetweenusers\\models\\requestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|c:\\users\\chaung\\desktop\\new folder\\kubernetestest\\grpcserviceinteractingbetweenusers\\grpcserviceinteractingbetweenusers\\protos\\requesthandlerrequest.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|solutionrelative:grpcserviceinteractingbetweenusers\\protos\\requesthandlerrequest.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|c:\\users\\chaung\\desktop\\new folder\\kubernetestest\\grpcserviceinteractingbetweenusers\\grpcserviceinteractingbetweenusers\\protos\\sendfriendrequest.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|solutionrelative:grpcserviceinteractingbetweenusers\\protos\\sendfriendrequest.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|c:\\users\\chaung\\desktop\\new folder\\kubernetestest\\grpcserviceinteractingbetweenusers\\grpcserviceinteractingbetweenusers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|c:\\users\\admin\\desktop\\holidayproject\\kubernetestest\\grpcserviceinteractingbetweenusers\\grpcserviceinteractingbetweenusers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|solutionrelative:grpcserviceinteractingbetweenusers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|c:\\users\\chaung\\desktop\\new folder\\kubernetestest\\grpcserviceinteractingbetweenusers\\grpcserviceinteractingbetweenusers\\grpcserviceinteractingbetweenusers.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\grpcserviceinteractingbetweenusers\\protos\\sendfriendrequest.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|solutionrelative:grpcserviceinteractingbetweenusers\\protos\\sendfriendrequest.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\grpcserviceinteractingbetweenusers\\protos\\requesthandlerrequest.proto||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|solutionrelative:grpcserviceinteractingbetweenusers\\protos\\requesthandlerrequest.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\grpcserviceinteractingbetweenusers\\services\\sendfriendrequesthandlerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|solutionrelative:grpcserviceinteractingbetweenusers\\services\\sendfriendrequesthandlerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\grpcserviceinteractingbetweenusers\\extensions\\insertrecordtodatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|solutionrelative:grpcserviceinteractingbetweenusers\\extensions\\insertrecordtodatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\grpcserviceinteractingbetweenusers\\services\\requesthandlerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|solutionrelative:grpcserviceinteractingbetweenusers\\services\\requesthandlerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\grpcserviceinteractingbetweenusers\\models\\friendmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|solutionrelative:grpcserviceinteractingbetweenusers\\models\\friendmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\grpcserviceinteractingbetweenusers\\models\\requestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|solutionrelative:grpcserviceinteractingbetweenusers\\models\\requestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\grpcserviceinteractingbetweenusers\\grpcserviceinteractingbetweenusers.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{6B09AC95-1477-4E0C-AE26-18A12672A602}|GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj|solutionrelative:grpcserviceinteractingbetweenusers\\grpcserviceinteractingbetweenusers.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
@@ -46,64 +46,66 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 11,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{c9c0ae26-aa77-11d2-b3f0-0000f87570ee}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "InsertRecordToDatabase.cs",
-              "DocumentMoniker": "C:\\Users\\chaung\\Desktop\\New folder\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\Extensions\\InsertRecordToDatabase.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\Extensions\\InsertRecordToDatabase.cs",
               "RelativeDocumentMoniker": "GrpcServiceInteractingBetweenUsers\\Extensions\\InsertRecordToDatabase.cs",
-              "ToolTip": "C:\\Users\\chaung\\Desktop\\New folder\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\Extensions\\InsertRecordToDatabase.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\Extensions\\InsertRecordToDatabase.cs",
               "RelativeToolTip": "GrpcServiceInteractingBetweenUsers\\Extensions\\InsertRecordToDatabase.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAmwCwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-15T09:37:33.834Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "FriendModel.cs",
-              "DocumentMoniker": "C:\\Users\\chaung\\Desktop\\New folder\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\Models\\FriendModel.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\Models\\FriendModel.cs",
               "RelativeDocumentMoniker": "GrpcServiceInteractingBetweenUsers\\Models\\FriendModel.cs",
-              "ToolTip": "C:\\Users\\chaung\\Desktop\\New folder\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\Models\\FriendModel.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\Models\\FriendModel.cs",
               "RelativeToolTip": "GrpcServiceInteractingBetweenUsers\\Models\\FriendModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-14T03:38:14.283Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "sendfriendrequest.proto",
-              "DocumentMoniker": "C:\\Users\\chaung\\Desktop\\New folder\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\Protos\\sendfriendrequest.proto",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\Protos\\sendfriendrequest.proto",
               "RelativeDocumentMoniker": "GrpcServiceInteractingBetweenUsers\\Protos\\sendfriendrequest.proto",
-              "ToolTip": "C:\\Users\\chaung\\Desktop\\New folder\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\Protos\\sendfriendrequest.proto",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\Protos\\sendfriendrequest.proto",
               "RelativeToolTip": "GrpcServiceInteractingBetweenUsers\\Protos\\sendfriendrequest.proto",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
               "WhenOpened": "2025-01-14T03:37:51.675Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "requesthandlerrequest.proto",
-              "DocumentMoniker": "C:\\Users\\chaung\\Desktop\\New folder\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\Protos\\requesthandlerrequest.proto",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\Protos\\requesthandlerrequest.proto",
               "RelativeDocumentMoniker": "GrpcServiceInteractingBetweenUsers\\Protos\\requesthandlerrequest.proto",
-              "ToolTip": "C:\\Users\\chaung\\Desktop\\New folder\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\Protos\\requesthandlerrequest.proto",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\Protos\\requesthandlerrequest.proto",
               "RelativeToolTip": "GrpcServiceInteractingBetweenUsers\\Protos\\requesthandlerrequest.proto",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
               "WhenOpened": "2025-01-14T03:37:47.525Z",
               "EditorCaption": ""
@@ -112,64 +114,77 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "GrpcServiceInteractingBetweenUsers.csproj",
-              "DocumentMoniker": "C:\\Users\\chaung\\Desktop\\New folder\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj",
               "RelativeDocumentMoniker": "GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj",
-              "ToolTip": "C:\\Users\\chaung\\Desktop\\New folder\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj",
               "RelativeToolTip": "GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-14T03:08:10.479Z"
+              "WhenOpened": "2025-01-14T03:08:10.479Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "RequestHandlerService.cs",
-              "DocumentMoniker": "C:\\Users\\chaung\\Desktop\\New folder\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\Services\\RequestHandlerService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\Services\\RequestHandlerService.cs",
               "RelativeDocumentMoniker": "GrpcServiceInteractingBetweenUsers\\Services\\RequestHandlerService.cs",
-              "ToolTip": "C:\\Users\\chaung\\Desktop\\New folder\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\Services\\RequestHandlerService.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\Services\\RequestHandlerService.cs",
               "RelativeToolTip": "GrpcServiceInteractingBetweenUsers\\Services\\RequestHandlerService.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAowGMAAACHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-14T02:41:36.187Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "RequestModel.cs",
-              "DocumentMoniker": "C:\\Users\\chaung\\Desktop\\New folder\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\Models\\RequestModel.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\Models\\RequestModel.cs",
               "RelativeDocumentMoniker": "GrpcServiceInteractingBetweenUsers\\Models\\RequestModel.cs",
-              "ToolTip": "C:\\Users\\chaung\\Desktop\\New folder\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\Models\\RequestModel.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\Models\\RequestModel.cs",
               "RelativeToolTip": "GrpcServiceInteractingBetweenUsers\\Models\\RequestModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-14T02:41:27.418Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "SendFriendRequestHandlerService.cs",
-              "DocumentMoniker": "C:\\Users\\chaung\\Desktop\\New folder\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\Services\\SendFriendRequestHandlerService.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\Services\\SendFriendRequestHandlerService.cs",
               "RelativeDocumentMoniker": "GrpcServiceInteractingBetweenUsers\\Services\\SendFriendRequestHandlerService.cs",
-              "ToolTip": "C:\\Users\\chaung\\Desktop\\New folder\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\Services\\SendFriendRequestHandlerService.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\Services\\SendFriendRequestHandlerService.cs",
               "RelativeToolTip": "GrpcServiceInteractingBetweenUsers\\Services\\SendFriendRequestHandlerService.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwB4AAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-14T02:38:53.672Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\chaung\\Desktop\\New folder\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\Program.cs",
               "RelativeDocumentMoniker": "GrpcServiceInteractingBetweenUsers\\Program.cs",
-              "ToolTip": "C:\\Users\\chaung\\Desktop\\New folder\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\GrpcServiceInteractingBetweenUsers\\GrpcServiceInteractingBetweenUsers\\Program.cs",
               "RelativeToolTip": "GrpcServiceInteractingBetweenUsers\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T02:38:38.97Z"
+              "WhenOpened": "2025-01-14T02:38:38.97Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:660191518:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             }
           ]
         }

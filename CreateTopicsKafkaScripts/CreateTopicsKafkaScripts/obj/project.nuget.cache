@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "cPpZZzp3Qr6feERiREKQhnxw3a2KyuLywexXB3zA7+5V5BYgaTbq0KWo9RlMGR92As6R6oLQ0B2YF742bzh8dw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\New folder (4)\\CreateTopicsKafkaScripts\\CreateTopicsKafkaScripts\\CreateTopicsKafkaScripts.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\confluent.kafka\\2.8.0\\confluent.kafka.2.8.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\librdkafka.redist\\2.8.0\\librdkafka.redist.2.8.0.nupkg.sha512"
+  ],
+  "logs": []
+}

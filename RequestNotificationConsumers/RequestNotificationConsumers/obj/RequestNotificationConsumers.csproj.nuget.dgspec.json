@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\RequestNotificationConsumers\\RequestNotificationConsumers\\RequestNotificationConsumers.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\RequestNotificationConsumers\\RequestNotificationConsumers\\RequestNotificationConsumers.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\RequestNotificationConsumers\\RequestNotificationConsumers\\RequestNotificationConsumers.csproj": {
+    "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\RequestNotificationConsumers\\RequestNotificationConsumers\\RequestNotificationConsumers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\RequestNotificationConsumers\\RequestNotificationConsumers\\RequestNotificationConsumers.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\RequestNotificationConsumers\\RequestNotificationConsumers\\RequestNotificationConsumers.csproj",
         "projectName": "RequestNotificationConsumers",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\RequestNotificationConsumers\\RequestNotificationConsumers\\RequestNotificationConsumers.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\RequestNotificationConsumers\\RequestNotificationConsumers\\RequestNotificationConsumers.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\RequestNotificationConsumers\\RequestNotificationConsumers\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\RequestNotificationConsumers\\RequestNotificationConsumers\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

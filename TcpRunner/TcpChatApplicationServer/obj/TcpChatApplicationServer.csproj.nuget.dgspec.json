@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\TcpChatApplicationServer.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\TcpChatApplicationServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\TcpChatApplicationServer.csproj": {
+    "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\TcpChatApplicationServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\TcpChatApplicationServer.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\TcpChatApplicationServer.csproj",
         "projectName": "TcpChatApplicationServer",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\TcpChatApplicationServer.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\TcpChatApplicationServer.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

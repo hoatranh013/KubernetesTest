@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\RequestNotificationConsumers\\",
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\RequestNotificationConsumers\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F37DCD47-D76D-4A2B-A519-E6E6BBD640D5}|RequestNotificationConsumers\\RequestNotificationConsumers.csproj|c:\\users\\admin\\desktop\\kubernetes\\new folder\\kubernetestest\\requestnotificationconsumers\\requestnotificationconsumers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F37DCD47-D76D-4A2B-A519-E6E6BBD640D5}|RequestNotificationConsumers\\RequestNotificationConsumers.csproj|c:\\users\\admin\\desktop\\holidayproject\\kubernetestest\\requestnotificationconsumers\\requestnotificationconsumers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F37DCD47-D76D-4A2B-A519-E6E6BBD640D5}|RequestNotificationConsumers\\RequestNotificationConsumers.csproj|solutionrelative:requestnotificationconsumers\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,11 +14,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             },
             {
               "$type": "Bookmark",
@@ -28,11 +32,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\RequestNotificationConsumers\\RequestNotificationConsumers\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\RequestNotificationConsumers\\RequestNotificationConsumers\\Program.cs",
               "RelativeDocumentMoniker": "RequestNotificationConsumers\\Program.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\RequestNotificationConsumers\\RequestNotificationConsumers\\Program.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\RequestNotificationConsumers\\RequestNotificationConsumers\\Program.cs",
               "RelativeToolTip": "RequestNotificationConsumers\\Program.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAwwDQAAAA3AAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAA7wBMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-18T08:46:30.098Z",
               "EditorCaption": ""

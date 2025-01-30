@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34622.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcApplicationHealthCheck", "ConsoleApp20\GrpcApplicationHealthCheck.csproj", "{6F2C29D2-F8EF-48B4-8103-B22CB5D3DC1E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F2C29D2-F8EF-48B4-8103-B22CB5D3DC1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F2C29D2-F8EF-48B4-8103-B22CB5D3DC1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F2C29D2-F8EF-48B4-8103-B22CB5D3DC1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F2C29D2-F8EF-48B4-8103-B22CB5D3DC1E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1DAC03BC-38CD-45D0-ADD7-1A8A259648CE}
+	EndGlobalSection
+EndGlobal

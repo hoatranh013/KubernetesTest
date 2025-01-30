@@ -1,49 +1,49 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\",
+  "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\tcpchatapplicationserver\\services\\requeststablenotificationtopic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|solutionrelative:tcpchatapplicationserver\\services\\requeststablenotificationtopic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\tcpchatapplicationserver\\services\\friendnotificationstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|solutionrelative:tcpchatapplicationserver\\services\\friendnotificationstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\tcpchatapplicationserver\\services\\deletefriendsnotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|solutionrelative:tcpchatapplicationserver\\services\\deletefriendsnotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|c:\\users\\admin\\desktop\\kubernetes\\new folder\\kubernetestest\\tcprunner\\tcpchatapplicationserver\\services\\clientuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|solutionrelative:tcpchatapplicationserver\\services\\clientuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\tcpchatapplicationserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\tcpchatapplicationserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|solutionrelative:tcpchatapplicationserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\tcpchatapplicationserver\\services\\iserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|c:\\users\\admin\\desktop\\holidayproject\\kubernetestest\\tcprunner\\tcpchatapplicationserver\\services\\clientuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|solutionrelative:tcpchatapplicationserver\\services\\clientuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\tcpchatapplicationserver\\services\\friendnotificationstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|solutionrelative:tcpchatapplicationserver\\services\\friendnotificationstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\tcpchatapplicationserver\\services\\requeststablenotificationtopic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|solutionrelative:tcpchatapplicationserver\\services\\requeststablenotificationtopic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\tcpchatapplicationserver\\services\\deletefriendsnotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|solutionrelative:tcpchatapplicationserver\\services\\deletefriendsnotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\tcpchatapplicationserver\\services\\iserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|solutionrelative:tcpchatapplicationserver\\services\\iserviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\tcpchatapplicationserver\\models\\serviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\tcpchatapplicationserver\\models\\serviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|solutionrelative:tcpchatapplicationserver\\models\\serviceclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\tcpchatapplicationserver\\models\\deletefriendnotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\tcpchatapplicationserver\\models\\deletefriendnotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|solutionrelative:tcpchatapplicationserver\\models\\deletefriendnotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\tcpchatapplicationserver\\models\\friendnotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\tcpchatapplicationserver\\models\\friendnotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|solutionrelative:tcpchatapplicationserver\\models\\friendnotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\tcpchatapplicationserver\\models\\requestnotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\tcpchatapplicationserver\\models\\requestnotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|solutionrelative:tcpchatapplicationserver\\models\\requestnotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\tcpchatapplicationserver\\models\\clientinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\tcpchatapplicationserver\\models\\clientinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BD70C8CC-BC71-4FCB-AD1E-063A11898068}|TcpChatApplicationServer\\TcpChatApplicationServer.csproj|solutionrelative:tcpchatapplicationserver\\models\\clientinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -54,19 +54,27 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "ServiceClient.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Models\\ServiceClient.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Models\\ServiceClient.cs",
               "RelativeDocumentMoniker": "TcpChatApplicationServer\\Models\\ServiceClient.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Models\\ServiceClient.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Models\\ServiceClient.cs",
               "RelativeToolTip": "TcpChatApplicationServer\\Models\\ServiceClient.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -74,50 +82,48 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "ClientUser.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Services\\ClientUser.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Services\\ClientUser.cs",
               "RelativeDocumentMoniker": "TcpChatApplicationServer\\Services\\ClientUser.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Services\\ClientUser.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Services\\ClientUser.cs",
               "RelativeToolTip": "TcpChatApplicationServer\\Services\\ClientUser.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAgwDEAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-17T03:06:55.182Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "FriendNotificationsTable.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Services\\FriendNotificationsTable.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Services\\FriendNotificationsTable.cs",
               "RelativeDocumentMoniker": "TcpChatApplicationServer\\Services\\FriendNotificationsTable.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Services\\FriendNotificationsTable.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Services\\FriendNotificationsTable.cs",
               "RelativeToolTip": "TcpChatApplicationServer\\Services\\FriendNotificationsTable.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAowDMAAAA0AAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwDMAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T08:32:48.414Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-16T08:32:48.414Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "RequestsTableNotificationTopic.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Services\\RequestsTableNotificationTopic.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Services\\RequestsTableNotificationTopic.cs",
               "RelativeDocumentMoniker": "TcpChatApplicationServer\\Services\\RequestsTableNotificationTopic.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Services\\RequestsTableNotificationTopic.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Services\\RequestsTableNotificationTopic.cs",
               "RelativeToolTip": "TcpChatApplicationServer\\Services\\RequestsTableNotificationTopic.cs",
               "ViewState": "AQIAACoAAAAAAAAAAAAYwEIAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T08:32:28.285Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-16T08:32:28.285Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "IServiceClient.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Services\\IServiceClient.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Services\\IServiceClient.cs",
               "RelativeDocumentMoniker": "TcpChatApplicationServer\\Services\\IServiceClient.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Services\\IServiceClient.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Services\\IServiceClient.cs",
               "RelativeToolTip": "TcpChatApplicationServer\\Services\\IServiceClient.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -125,36 +131,36 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Program.cs",
               "RelativeDocumentMoniker": "TcpChatApplicationServer\\Program.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Program.cs",
-              "RelativeToolTip": "TcpChatApplicationServer\\Program.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwCwAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Program.cs*",
+              "RelativeToolTip": "TcpChatApplicationServer\\Program.cs*",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwCAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-06T16:25:26.331Z"
+              "WhenOpened": "2025-01-06T16:25:26.331Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "DeleteFriendsNotification.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Services\\DeleteFriendsNotification.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Services\\DeleteFriendsNotification.cs",
               "RelativeDocumentMoniker": "TcpChatApplicationServer\\Services\\DeleteFriendsNotification.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Services\\DeleteFriendsNotification.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Services\\DeleteFriendsNotification.cs",
               "RelativeToolTip": "TcpChatApplicationServer\\Services\\DeleteFriendsNotification.cs",
               "ViewState": "AQIAAB4AAAAAAAAAAAAAADcAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-16T08:33:08.641Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-16T08:33:08.641Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "DeleteFriendNotification.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Models\\DeleteFriendNotification.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Models\\DeleteFriendNotification.cs",
               "RelativeDocumentMoniker": "TcpChatApplicationServer\\Models\\DeleteFriendNotification.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Models\\DeleteFriendNotification.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Models\\DeleteFriendNotification.cs",
               "RelativeToolTip": "TcpChatApplicationServer\\Models\\DeleteFriendNotification.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -164,9 +170,9 @@
               "$type": "Document",
               "DocumentIndex": 8,
               "Title": "FriendNotification.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Models\\FriendNotification.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Models\\FriendNotification.cs",
               "RelativeDocumentMoniker": "TcpChatApplicationServer\\Models\\FriendNotification.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Models\\FriendNotification.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Models\\FriendNotification.cs",
               "RelativeToolTip": "TcpChatApplicationServer\\Models\\FriendNotification.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -176,9 +182,9 @@
               "$type": "Document",
               "DocumentIndex": 10,
               "Title": "ClientInformation.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Models\\ClientInformation.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Models\\ClientInformation.cs",
               "RelativeDocumentMoniker": "TcpChatApplicationServer\\Models\\ClientInformation.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Models\\ClientInformation.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Models\\ClientInformation.cs",
               "RelativeToolTip": "TcpChatApplicationServer\\Models\\ClientInformation.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -188,17 +194,13 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "RequestNotification.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Models\\RequestNotification.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Models\\RequestNotification.cs",
               "RelativeDocumentMoniker": "TcpChatApplicationServer\\Models\\RequestNotification.cs",
-              "ToolTip": "C:\\Users\\Admin\\Desktop\\Kubernetes\\New folder\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Models\\RequestNotification.cs",
+              "ToolTip": "C:\\Users\\Admin\\Desktop\\HolidayProject\\KubernetesTest\\TcpRunner\\TcpChatApplicationServer\\Models\\RequestNotification.cs",
               "RelativeToolTip": "TcpChatApplicationServer\\Models\\RequestNotification.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-16T08:28:32.009Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             }
           ]
         },

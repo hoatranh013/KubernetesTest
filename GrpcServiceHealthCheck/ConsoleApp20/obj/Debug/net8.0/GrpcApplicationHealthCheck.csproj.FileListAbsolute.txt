@@ -1,0 +1,45 @@
+C:\Users\Admin\Desktop\New folder (4)\ConsoleApp20\ConsoleApp20\bin\Debug\net8.0\GrpcApplicationHealthCheck.exe
+C:\Users\Admin\Desktop\New folder (4)\ConsoleApp20\ConsoleApp20\bin\Debug\net8.0\GrpcApplicationHealthCheck.deps.json
+C:\Users\Admin\Desktop\New folder (4)\ConsoleApp20\ConsoleApp20\bin\Debug\net8.0\GrpcApplicationHealthCheck.runtimeconfig.json
+C:\Users\Admin\Desktop\New folder (4)\ConsoleApp20\ConsoleApp20\bin\Debug\net8.0\GrpcApplicationHealthCheck.dll
+C:\Users\Admin\Desktop\New folder (4)\ConsoleApp20\ConsoleApp20\bin\Debug\net8.0\GrpcApplicationHealthCheck.pdb
+C:\Users\Admin\Desktop\New folder (4)\ConsoleApp20\ConsoleApp20\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\Admin\Desktop\New folder (4)\ConsoleApp20\ConsoleApp20\bin\Debug\net8.0\Grpc.Core.Api.dll
+C:\Users\Admin\Desktop\New folder (4)\ConsoleApp20\ConsoleApp20\bin\Debug\net8.0\Grpc.HealthCheck.dll
+C:\Users\Admin\Desktop\New folder (4)\ConsoleApp20\ConsoleApp20\bin\Debug\net8.0\Grpc.Net.Client.dll
+C:\Users\Admin\Desktop\New folder (4)\ConsoleApp20\ConsoleApp20\bin\Debug\net8.0\Grpc.Net.Common.dll
+C:\Users\Admin\Desktop\New folder (4)\ConsoleApp20\ConsoleApp20\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Admin\Desktop\New folder (4)\ConsoleApp20\ConsoleApp20\obj\Debug\net8.0\GrpcApplicationHealthCheck.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\New folder (4)\ConsoleApp20\ConsoleApp20\obj\Debug\net8.0\GrpcApplicationHealthCheck.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\New folder (4)\ConsoleApp20\ConsoleApp20\obj\Debug\net8.0\GrpcApplicationHealthCheck.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\New folder (4)\ConsoleApp20\ConsoleApp20\obj\Debug\net8.0\GrpcApplicationHealthCheck.AssemblyInfo.cs
+C:\Users\Admin\Desktop\New folder (4)\ConsoleApp20\ConsoleApp20\obj\Debug\net8.0\GrpcApplicationHealthCheck.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\New folder (4)\ConsoleApp20\ConsoleApp20\obj\Debug\net8.0\GrpcAppl.3F205A84.Up2Date
+C:\Users\Admin\Desktop\New folder (4)\ConsoleApp20\ConsoleApp20\obj\Debug\net8.0\GrpcApplicationHealthCheck.dll
+C:\Users\Admin\Desktop\New folder (4)\ConsoleApp20\ConsoleApp20\obj\Debug\net8.0\refint\GrpcApplicationHealthCheck.dll
+C:\Users\Admin\Desktop\New folder (4)\ConsoleApp20\ConsoleApp20\obj\Debug\net8.0\GrpcApplicationHealthCheck.pdb
+C:\Users\Admin\Desktop\New folder (4)\ConsoleApp20\ConsoleApp20\obj\Debug\net8.0\GrpcApplicationHealthCheck.genruntimeconfig.cache
+C:\Users\Admin\Desktop\New folder (4)\ConsoleApp20\ConsoleApp20\obj\Debug\net8.0\ref\GrpcApplicationHealthCheck.dll
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\GrpcServiceHealthCheck\ConsoleApp20\bin\Debug\net8.0\GrpcApplicationHealthCheck.exe
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\GrpcServiceHealthCheck\ConsoleApp20\bin\Debug\net8.0\GrpcApplicationHealthCheck.deps.json
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\GrpcServiceHealthCheck\ConsoleApp20\bin\Debug\net8.0\GrpcApplicationHealthCheck.runtimeconfig.json
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\GrpcServiceHealthCheck\ConsoleApp20\bin\Debug\net8.0\GrpcApplicationHealthCheck.dll
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\GrpcServiceHealthCheck\ConsoleApp20\bin\Debug\net8.0\GrpcApplicationHealthCheck.pdb
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\GrpcServiceHealthCheck\ConsoleApp20\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\GrpcServiceHealthCheck\ConsoleApp20\bin\Debug\net8.0\Grpc.Core.Api.dll
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\GrpcServiceHealthCheck\ConsoleApp20\bin\Debug\net8.0\Grpc.HealthCheck.dll
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\GrpcServiceHealthCheck\ConsoleApp20\bin\Debug\net8.0\Grpc.Net.Client.dll
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\GrpcServiceHealthCheck\ConsoleApp20\bin\Debug\net8.0\Grpc.Net.Common.dll
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\GrpcServiceHealthCheck\ConsoleApp20\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\GrpcServiceHealthCheck\ConsoleApp20\obj\Debug\net8.0\GrpcApplicationHealthCheck.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\GrpcServiceHealthCheck\ConsoleApp20\obj\Debug\net8.0\GrpcApplicationHealthCheck.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\GrpcServiceHealthCheck\ConsoleApp20\obj\Debug\net8.0\GrpcApplicationHealthCheck.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\GrpcServiceHealthCheck\ConsoleApp20\obj\Debug\net8.0\GrpcApplicationHealthCheck.AssemblyInfo.cs
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\GrpcServiceHealthCheck\ConsoleApp20\obj\Debug\net8.0\GrpcApplicationHealthCheck.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\GrpcServiceHealthCheck\ConsoleApp20\obj\Debug\net8.0\GrpcApplicationHealthCheck.sourcelink.json
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\GrpcServiceHealthCheck\ConsoleApp20\obj\Debug\net8.0\GrpcAppl.3F205A84.Up2Date
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\GrpcServiceHealthCheck\ConsoleApp20\obj\Debug\net8.0\GrpcApplicationHealthCheck.dll
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\GrpcServiceHealthCheck\ConsoleApp20\obj\Debug\net8.0\refint\GrpcApplicationHealthCheck.dll
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\GrpcServiceHealthCheck\ConsoleApp20\obj\Debug\net8.0\GrpcApplicationHealthCheck.pdb
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\GrpcServiceHealthCheck\ConsoleApp20\obj\Debug\net8.0\GrpcApplicationHealthCheck.genruntimeconfig.cache
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\GrpcServiceHealthCheck\ConsoleApp20\obj\Debug\net8.0\ref\GrpcApplicationHealthCheck.dll

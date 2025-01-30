@@ -16,19 +16,20 @@ public class HelloWorld
 {
     public static async Task Main(string[] args)
     {
-        using var store = DocumentStore.For("Host=postgresql-database;Port=5432;Username=myuser;Password=mypassword;Database=test");
+        using var store = DocumentStore.For("Host=postgresql;Port=5432;Username=myuser;Password=mypassword;Database=mydb");
 
         var session = store.LightweightSession(System.Data.IsolationLevel.ReadCommitted);
 
 
         var rabbitMqFactory = new RabbitMQ.Client.ConnectionFactory();
         rabbitMqFactory.UserName = "guest";
-        rabbitMqFactory.Password = "password";
+        rabbitMqFactory.Password = "guest";
         rabbitMqFactory.VirtualHost = "/";
-        rabbitMqFactory.HostName = "rabbit-mq-server";
+        rabbitMqFactory.HostName = "rabbitmq";
         rabbitMqFactory.Port = 5672;
         var conn = rabbitMqFactory.CreateConnection();
 
+        Console.WriteLine("Rabbit MQ Connection Success....");
         var locked = new object();
 
         var channel = conn.CreateModel();
@@ -55,7 +56,7 @@ public class HelloWorld
             channel.BasicAck(args.DeliveryTag, false);
             Monitor.Exit(locked);
         };
-        string consumerTag = channel.BasicConsume("message-queue", false, rabbitmqConsumer);
+        string consumerTag = channel.BasicConsume("message_queue", false, rabbitmqConsumer);
         while (true)
         {
 

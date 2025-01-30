@@ -1,12 +1,11 @@
 {
   "Version": 1,
-  "Hash": "eBOn+qAogHkSxwtVB4uIcdZRVsIEkrCxXp/CIqU048c=",
+  "Hash": "2N8X2NSI6+Mr3o+pGj8+L0sXGSX8YBEzqkP/eIFgJX8=",
   "Source": "GrpcServiceInteractingBetweenUsers",
   "BasePath": "_content/GrpcServiceInteractingBetweenUsers",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": []
 }

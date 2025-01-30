@@ -1,281 +1,298 @@
-version: '3.0'
+version: '2.0'
 services:
-  tcprunner:
-    build: TcpRunner/TcpChatApplicationServer/.
+  createtopicskafkascripts:
+    build:
+      context: CreateTopicsKafkaScripts/CreateTopicsKafkaScripts/.
+    ports:
+      - "1000:1000"
+    restart: on-failure
     depends_on:
-      rabbitmq:
-        condition: service_healthy
-      postgresql:
-        condition: service_healthy
+      - kafka
     networks:
       - backend
+    entrypoint: ["bash", "-c", "apt-get update && apt-get install -y dos2unix && dos2unix /app/wait-for-kafka.sh && /app/wait-for-kafka.sh"]
+  tcprunner:
+    build: 
+      context: TcpRunner/TcpChatApplicationServer/.
     ports:
       - "30000:30000"
-    environment:
-      RABBITMQ_HOST: rabbitmq
+    restart: always
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://tcprunner:30000/health"]
-      interval: 30s
+      test: ["CMD", "bash", "-c", "apt update && apt install -y netcat-openbsd && nc -zv tcprunner 30000"]
+      interval: 10s
+      retries: 2
       timeout: 60s
-      retries: 1
-      start_period: 30s
-    restart: on-failure  
-  deletefriendsnotificationconsumers:
-    build:  DeleteFriendsNotificationConsumers/DeleteFriendsNotificationConsumers/.
-    depends_on:
-      kafka:
-        condition: service_healthy
-      tcprunner:
-        condition: service_healthy
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://deletefriendsnotificationconsumers:30001/health"]
-      interval: 30s
-      timeout: 60s
-      retries: 1
-      start_period: 30s
-    networks:
-      - backend
-    ports:
-      - "30001:30001"
-    restart: on-failure
-  friendnotificationstableconsumers:
-    build: FriendNotificationsTableConsumers/FriendNotificationsTableConsumers/.
-    depends_on:
-      kafka:
-        condition: service_healthy
-      tcprunner:
-        condition: service_healthy
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://friendnotificationstableconsumers:30002/health"]
-      interval: 30s
-      timeout: 60s
-      retries: 1
-      start_period: 30s
-    networks:
-      - backend
-    ports:
-      - "30002:30002"
-    restart: on-failure
-  grpcserviceinteractingbetweenusers:
-    build: GrpcServiceInteractingBetweenUsers/GrpcServiceInteractingBetweenUsers/.
-    networks:
-      - backend
-    ports:
-      - "30003:30003"
-    depends_on:
-      postgresql:
-        condition: service_healthy
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://grpcserviceinteractingbetweenusers:30003/health"]
-      interval: 30s
-      timeout: 60s
-      retries: 1
-      start_period: 30s
-  rabbitmqconsumer:
-    build: RabbitMqConsumer/RabbitMqConsumer/.
+      start_period: 10s
     depends_on:
       rabbitmq:
         condition: service_healthy
-      postgresql:
-        condition: service_healthy
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://rabbitmqconsumer:30004/health"]
-      interval: 30s
-      timeout: 60s
-      retries: 1
-      start_period: 30s
     networks:
       - backend
+  rabbitmqconsumer:
+    build:
+      context: RabbitMqConsumer/RabbitMqConsumer/.
     ports:
-      - "30004:30004"
-    environment:
-      RABBITMQ_HOST: rabbitmq
-    restart: on-failure  
-  requestnotificationconsumers:
-    build: RequestNotificationConsumers/RequestNotificationConsumers/.
+      - "8686:8686"
+    restart: always
     depends_on:
-      kafka:
-        condition: service_healthy
-      tcprunner:
-        condition: service_healthy
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://requestnotificationconsumers:30005/health"]
-      interval: 30s
-      timeout: 60s
-      retries: 1
-      start_period: 30s
-    networks:
-      - backend
-    ports:
-      - "30005:30005"
-  tcpservergetaddfriendrequests:
-    build: TcpServerGetAddFriendRequests/TcpServerGetAddFriendRequests/.
-    depends_on:
-      grpcserviceinteractingbetweenusers:
+      rabbitmq:
         condition: service_healthy
     networks:
       - backend
-    ports:
-      - "30006:30006"
-    restart: on-failure
-  tcpservergetaddfriendsrequests:
-    build: TcpServerGetAddFriendsRequests/TcpServerGetAddFriendsRequests/.
-    depends_on:
-      grpcserviceinteractingbetweenusers:
-        condition: service_healthy
-    networks:
-      - backend
-    ports:
-      - "30007:30007"
-    restart: on-failure
-  tcpservergetdeletefriendrequests:
-    build: TcpServerGetDeleteFriendRequests/TcpServerGetDeleteFriendRequests/.
-    depends_on:
-      grpcserviceinteractingbetweenusers:
-        condition: service_healthy
-    networks:
-      - backend
-    ports:
-      - "30008:30008"
-    restart: on-failure
-  tcpservergetdeletefriendsrequests:
-    build: TcpServerGetDeleteFriendsRequests/TcpServerGetDeleteFriendsRequests/.
-    depends_on:
-      grpcserviceinteractingbetweenusers:
-        condition: service_healthy
-    networks:
-      - backend
-    ports:
-      - "30009:30009"
-    restart: on-failure
-  workerapplicationfordeletefriendsnotification:
-    build: WorkerApplicationForDeleteFriendsNotification/WorkerApplicationForDeleteFriendsNotification/.
-    depends_on:
-      kafka:
-        condition: service_healthy
-      deletefriendsnotificationconsumers:
-        condition: service_healthy
-      postgresql:
-        condition: service_healthy
-    networks:
-      - backend
-    ports:
-      - "30010:30010"
-  workerapplicationforfriendnotificationstable:
-    build: WorkerApplicationForFriendNotificationsTable/WorkerApplicationForFriendNotificationsTable/.
-    depends_on:
-      kafka:
-        condition: service_healthy
-      friendnotificationstableconsumers:
-        condition: service_healthy
-      postgresql:
-        condition: service_healthy
-    networks:
-      - backend
-    ports:
-      - "30011:30011"
-    restart: on-failure
-  workerapplicationforrequestnotification:
-    build: WorkerApplicationForRequestNotification/WorkerApplicationForRequestNotification/.
-    depends_on:
-      kafka:
-        condition: service_healthy
-      requestnotificationconsumers:
-        condition: service_healthy
-      postgresql:
-        condition: service_healthy
-    networks:
-      - backend
-    ports:
-      - "30012:30012"
-    restart: on-failure
-  postgresql:
-    image: postgres:latest
-    container_name: postgres_container    
-    environment:
-      POSTGRES_USER: myuser
-      POSTGRES_PASSWORD: mypassword
-      POSTGRES_DB: test
-    healthcheck:
-      test: ["CMD", "psql", "-U", "myuser", "-d", "test", "-c", "SELECT count(*) FROM information_schema.tables WHERE table_schema = 'public' AND table_type = 'BASE TABLE' HAVING count(*) >= 6;"]
-      interval: 10s
-      timeout: 60s
-      retries: 1
-      start_period: 10s
-    ports:
-      - "5432:5432"
-    networks:
-      - backend
-    volumes:
-      - postgres_data:/var/lib/postgresql/data
   rabbitmq:
-    image: "rabbitmq:3-management"
+    image: "rabbitmq:management"
+    container_name: rabbitmq
     ports:
       - "15672:15672"
       - "5672:5672"
+    restart: always
     environment:
-      RABBITMQ_DEFAULT_USER: guest
-      RABBITMQ_DEFAULT_PASS: password
-    healthcheck:
-      test: ["CMD", "curl", "-f", "http://guest:password@rabbitmq:15672/api/overview"]
-      interval: 10s
-      timeout: 60s
-      retries: 1
-      start_period: 10s
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
     volumes:
       - rabbitmq_data:/var/lib/rabbitmq
-      - rabbitmq_config:/etc/rabbitmq
+      - ./RabbitMqSeedsVolume:/opt/RabbitMqSeedsVolume
     networks:
       - backend
+    healthcheck:
+      test: ["CMD", "bash", "-c", "dos2unix /opt/RabbitMqSeedsVolume/rabbitmq_check_health.sh && chmod +x /opt/RabbitMqSeedsVolume/rabbitmq_check_health.sh && bash /opt/RabbitMqSeedsVolume/rabbitmq_check_health.sh"]
+      interval: 10s
+      retries: 5
+      timeout: 600s
+      start_period: 45s
+    entrypoint: ["bash", "-c", "apt-get update && apt-get install -y curl && apt-get install -y dos2unix && dos2unix /opt/RabbitMqSeedsVolume/initial_seeds_rabbitmq.sh && chmod +x /opt/RabbitMqSeedsVolume/initial_seeds_rabbitmq.sh && bash /opt/RabbitMqSeedsVolume/initial_seeds_rabbitmq.sh"]
   zookeeper:
-    image: confluentinc/cp-zookeeper:latest
-    restart: always
+    image: confluentinc/cp-zookeeper:7.0.1
+    container_name: zookeeper
+    ports:
+      - "2181:2181"
     environment:
       ZOOKEEPER_CLIENT_PORT: 2181
       ZOOKEEPER_TICK_TIME: 2000
-    healthcheck:
-      test: ["CMD", "nc", "-z", "zookeeper", "2181"]
-      interval: 10s
-      timeout: 60s
-      retries: 1
-      start_period: 10s
-    ports:
-      - 22181:2181
+      ZOOKEEPER_INIT_LIMIT: 5
+      ZOOKEEPER_SYNC_LIMIT: 2
     networks:
       - backend
   kafka:
     image: confluentinc/cp-kafka:latest
-    restart: always
-    depends_on:
-      zookeeper:
-        condition: service_healthy
     ports:
-      - 29092:29092
+      - "9093:9093"
+    volumes:
+      - ./KafkaSeedsVolume:/opt/KafkaSeedsVolume
+    healthcheck:
+      test: ["CMD", "bash", "-c", "sed -i 's/\r$//' /opt/KafkaSeedsVolume/kafka_topics.txt && sed -i 's/\r$//' /opt/KafkaSeedsVolume/check-topics-kafka.sh && chmod +x /opt/KafkaSeedsVolume/check-topics-kafka.sh && bash /opt/KafkaSeedsVolume/check-topics-kafka.sh"]
+      interval: 20s
+      retries: 2
+      timeout: 120s
+      start_period: 60s
     environment:
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,PLAINTEXT_HOST://kafka:29092
-      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
-      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
-      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
-    healthcheck:
-      test: ["CMD", "kafka-topics.sh", "--bootstrap-server", "kafka:29092", "--list", "|", "grep", "DeleteFriendsNotification", "|", "grep", "FriendNotificationsTable", "|", "grep", "RequestsTableNotificationTopic"]
-      interval: 10s
-      timeout: 60s
-      retries: 1
-      start_period: 10s
+      KAFKA_ADVERTISED_LISTENERS: INSIDE://kafka:9093
+      KAFKA_LISTENER_SECURITY_PROTOCOL: PLAINTEXT
+      KAFKA_LISTENER_PORT: 9093
+      KAFKA_LISTENER_PROTOCOL: PLAINTEXT
+      KAFKA_LISTENER_HOST: 0.0.0.0
+      KAFKA_LISTENER_INTERFACES: INSIDE
+      KAFKA_LISTENER_NAMES: INSIDE
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: INSIDE:PLAINTEXT
+      KAFKA_LISTENER_NAME_INSIDE: INSIDE
+      KAFKA_INTER_BROKER_LISTENER_NAME: INSIDE
+    depends_on:
+      - zookeeper
     networks:
       - backend
-
+  postgresql:
+    image: postgres:latest
+    container_name: postgres-db
+    environment:
+      - POSTGRES_USER=myuser
+      - POSTGRES_PASSWORD=mypassword
+      - POSTGRES_DB=mydb
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./PostgresqlSeedsVolume:/opt/PostgresqlSeedsVolume
+    entrypoint: ["bash", "-c", "apt-get update && apt-get install -y dos2unix && \
+      dos2unix /opt/PostgresqlSeedsVolume/postgresql_seeds_creating.sh && \
+      /opt/PostgresqlSeedsVolume/postgresql_seeds_creating.sh"]
+    networks:
+      - backend
+    healthcheck:
+      test: ["CMD", "bash", "-c", "apt-get update && apt-get install -y dos2unix && dos2unix /opt/PostgresqlSeedsVolume/check-postgresql-version.sh && chmod +x /opt/PostgresqlSeedsVolume/check-postgresql-version.sh && bash /opt/PostgresqlSeedsVolume/check-postgresql-version.sh"]
+      interval: 30s
+      retries: 2
+      start_period: 10s
+      timeout: 10s
+  deletefriendsnotificationconsumers:
+    build:
+      context: DeleteFriendsNotificationConsumers/DeleteFriendsNotificationConsumers/.
+    ports:
+      - "30001:30001"
+    restart: on-failure
+    networks:
+      - backend
+    healthcheck:
+      test: ["CMD", "bash", "-c", "apt-get update && apt-get install -y dos2unix && dos2unix health_check.sh && chmod +x health_check.sh && bash health_check.sh"]
+      interval: 30s
+      retries: 3
+      start_period: 30s
+      timeout: 60s
+    depends_on:
+      kafka:
+        condition: service_healthy
+      tcprunner:
+        condition: service_healthy
+  friendnotificationstableconsumers:
+    build:
+      context: FriendNotificationsTableConsumers/FriendNotificationsTableConsumers/.
+    ports:
+      - "30002:30002"
+    restart: on-failure
+    networks:
+      - backend
+    healthcheck:
+      test: ["CMD", "bash", "-c", "apt-get update && apt-get install -y dos2unix && dos2unix health_check.sh && chmod +x health_check.sh && bash health_check.sh"]
+      interval: 30s
+      retries: 3
+      start_period: 30s
+      timeout: 60s
+    depends_on:
+      kafka:
+        condition: service_healthy
+      tcprunner:
+        condition: service_healthy
+  requestnotificationconsumers:
+    build:
+      context: RequestNotificationConsumers/RequestNotificationConsumers/.
+    ports:
+      - "30003:30003"
+    restart: on-failure
+    networks:
+      - backend
+    healthcheck:
+      test: ["CMD", "bash", "-c", "apt-get update && apt-get install -y dos2unix && dos2unix health_check.sh && chmod +x health_check.sh && bash health_check.sh"]
+      interval: 30s
+      retries: 3
+      start_period: 30s
+      timeout: 60s
+    depends_on:
+      kafka:
+        condition: service_healthy
+      tcprunner:
+        condition: service_healthy
+  grpcserviceinteractingbetweenusers:
+    build:
+      context: GrpcServiceInteractingBetweenUsers/GrpcServiceInteractingBetweenUsers/.
+    ports:
+      - "8080:8080"
+    restart: on-failure
+    networks:
+      - backend
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./GrpcServiceInteractingBetweenUsers/opt:/GrpcServiceInteractingBetweenUsers/opt
+    healthcheck:
+      test: ["CMD", "bash", "-c", "dos2unix /GrpcServiceInteractingBetweenUsers/opt/health_check.sh && /GrpcServiceInteractingBetweenUsers/opt/health_check.sh"]
+      interval: 60s
+      retries: 2
+      timeout: 60s
+      start_period: 10s
+    depends_on:
+      postgresql:
+        condition: service_healthy
+  grpcservicehealthcheck:
+    build:
+      context: GrpcServiceHealthCheck/ConsoleApp20/.
+    ports:
+      - "40000:40000"
+    networks:
+      - backend
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+  tcpservergetaddfriendrequests:
+    build:
+      context: TcpServerGetAddFriendRequests/TcpServerGetAddFriendRequests/.
+    ports:
+      - "30005:30005"
+    restart: on-failure
+    networks:
+      - backend
+    depends_on:
+      grpcserviceinteractingbetweenusers:
+        condition: service_healthy
+  tcpservergetaddfriendsrequests:
+    build:
+      context: TcpServerGetAddFriendsRequests/TcpServerGetAddFriendsRequests/.
+    ports:
+      - "30006:30006"
+    restart: on-failure
+    networks:
+      - backend
+    depends_on:
+      grpcserviceinteractingbetweenusers:
+        condition: service_healthy
+  tcpservergetdeletefriendrequests:
+    build:
+      context: TcpServerGetDeleteFriendRequests/TcpServerGetDeleteFriendRequests/.
+    ports:
+      - "30007:30007"
+    restart: on-failure
+    networks:
+      - backend
+    depends_on:
+      grpcserviceinteractingbetweenusers:
+        condition: service_healthy
+  tcpservergetdeletefriendsrequests:
+    build:
+      context: TcpServerGetDeleteFriendsRequests/TcpServerGetDeleteFriendsRequests/.
+    ports:
+      - "30008:30008"
+    restart: on-failure
+    networks:
+      - backend
+    depends_on:
+      grpcserviceinteractingbetweenusers:
+        condition: service_healthy
+  workerapplicationfordeletefriendsnotification:
+    build:
+      context: WorkerApplicationForDeleteFriendsNotification/WorkerApplicationForDeleteFriendsNotification/.
+    ports:
+      - "30009:30009"
+    restart: on-failure
+    networks:
+      - backend
+    depends_on:
+      friendnotificationstableconsumers:
+        condition: service_healthy
+  workerapplicationforfriendnotificationstable:
+    build:
+      context: WorkerApplicationForFriendNotificationsTable/WorkerApplicationForFriendNotificationsTable/.
+    ports:
+      - "30010:30010"
+    restart: on-failure
+    networks:
+      - backend
+    depends_on:
+      friendnotificationstableconsumers:
+        condition: service_healthy
+  workerapplicationforrequestnotification:
+    build:
+      context: WorkerApplicationForRequestNotification/WorkerApplicationForRequestNotification/.
+    ports:
+      - "30011:30011"
+    restart: on-failure
+    networks:
+      - backend
+    depends_on:
+      requestnotificationconsumers:
+        condition: service_healthy
+volumes:
+  rabbitmq_data:
+  postgres_data:
 networks:
   backend:
     driver: bridge
-    ipam:
-      config:
-        - subnet: "172.18.0.0/16"
 
-volumes:
-  rabbitmq_data:
-  rabbitmq_config:
-  postgres_data:
-    driver: local
+

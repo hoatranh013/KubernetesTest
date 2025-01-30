@@ -25,7 +25,7 @@ public class HelloWorld
         }).ToList();
 
 
-        var ipAddress = IPAddress.Parse("127.0.0.1");
+        var ipAddress = IPAddress.Parse("0.0.0.0");
         var ipEndpoint = new IPEndPoint(ipAddress, 30000);
         var tcpServer = new TcpListener(ipEndpoint);
         tcpServer.Start();

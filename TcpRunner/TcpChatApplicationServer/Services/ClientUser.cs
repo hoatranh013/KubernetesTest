@@ -18,16 +18,16 @@ namespace TcpChatApplicationServer.Services
         {
             var rabbitMqFactory = new ConnectionFactory();
             rabbitMqFactory.UserName = "guest";
-            rabbitMqFactory.Password = "password";
+            rabbitMqFactory.Password = "guest";
             rabbitMqFactory.VirtualHost = "/";
-            rabbitMqFactory.HostName = "127.0.0.1";
+            rabbitMqFactory.HostName = "rabbitmq";
             rabbitMqFactory.Port = 5672;
 
             var conn = rabbitMqFactory.CreateConnection();
             channel = conn.CreateModel();
             try
             {
-                channel.ExchangeDeclare("message-exchange", ExchangeType.Direct, true, false);
+                channel.ExchangeDeclare("message_exchange", ExchangeType.Direct, true, false);
             }
             catch
             {
@@ -36,7 +36,7 @@ namespace TcpChatApplicationServer.Services
 
             try
             {
-                channel.QueueDeclare("message-queue", durable: true,
+                channel.QueueDeclare("message_queue", durable: true,
                 exclusive: false,
                 autoDelete: false,
                 arguments: null);
@@ -46,7 +46,8 @@ namespace TcpChatApplicationServer.Services
                 Console.WriteLine("Queue Exists");
             }
 
-            channel.QueueBind("message-queue", "message-exchange", "info");
+            channel.QueueBind("message_queue", "message_exchange", "info");
+            Console.WriteLine("Successfully");
         }
         public void Handle(ref List<ClientInformation> clientInformations, TcpClient tcpClient)
         {

@@ -17,7 +17,8 @@ public class Program
 {
     public static async Task Main()
     {
-        var ipAddress = IPAddress.Parse("127.0.0.1");
+        var ipEntry = await Dns.GetHostEntryAsync("tcprunner");
+        var ipAddress = ipEntry.AddressList[0];
         var ipEndpoint = new IPEndPoint(ipAddress, 30000);
         var tcpClient = new TcpClient();
         await tcpClient.ConnectAsync(ipEndpoint);
@@ -30,7 +31,7 @@ public class Program
         CancellationToken stoppingToken = new CancellationToken();
         var consumerConfig = new ConsumerConfig
         {
-            BootstrapServers = "localhost:29092",
+            BootstrapServers = "kafka:9093",
             GroupId = Guid.NewGuid().ToString(),
             AutoOffsetReset = AutoOffsetReset.Latest,
             EnableAutoCommit = true,

@@ -86,3 +86,22 @@ C:\Users\Admin\Desktop\Kubernetes\New folder\KubernetesTest\TcpRunner\TcpChatApp
 C:\Users\Admin\Desktop\Kubernetes\New folder\KubernetesTest\TcpRunner\TcpChatApplicationServer\obj\Debug\net8.0\TcpChatApplicationServer.pdb
 C:\Users\Admin\Desktop\Kubernetes\New folder\KubernetesTest\TcpRunner\TcpChatApplicationServer\obj\Debug\net8.0\TcpChatApplicationServer.genruntimeconfig.cache
 C:\Users\Admin\Desktop\Kubernetes\New folder\KubernetesTest\TcpRunner\TcpChatApplicationServer\obj\Debug\net8.0\ref\TcpChatApplicationServer.dll
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\TcpRunner\TcpChatApplicationServer\bin\Debug\net8.0\TcpChatApplicationServer.exe
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\TcpRunner\TcpChatApplicationServer\bin\Debug\net8.0\TcpChatApplicationServer.deps.json
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\TcpRunner\TcpChatApplicationServer\bin\Debug\net8.0\TcpChatApplicationServer.runtimeconfig.json
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\TcpRunner\TcpChatApplicationServer\bin\Debug\net8.0\TcpChatApplicationServer.dll
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\TcpRunner\TcpChatApplicationServer\bin\Debug\net8.0\TcpChatApplicationServer.pdb
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\TcpRunner\TcpChatApplicationServer\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\TcpRunner\TcpChatApplicationServer\bin\Debug\net8.0\RabbitMQ.Client.dll
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\TcpRunner\TcpChatApplicationServer\obj\Debug\net8.0\TcpChatApplicationServer.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\TcpRunner\TcpChatApplicationServer\obj\Debug\net8.0\TcpChatApplicationServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\TcpRunner\TcpChatApplicationServer\obj\Debug\net8.0\TcpChatApplicationServer.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\TcpRunner\TcpChatApplicationServer\obj\Debug\net8.0\TcpChatApplicationServer.AssemblyInfo.cs
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\TcpRunner\TcpChatApplicationServer\obj\Debug\net8.0\TcpChatApplicationServer.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\TcpRunner\TcpChatApplicationServer\obj\Debug\net8.0\TcpChatApplicationServer.sourcelink.json
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\TcpRunner\TcpChatApplicationServer\obj\Debug\net8.0\TcpChatA.CD1E2B28.Up2Date
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\TcpRunner\TcpChatApplicationServer\obj\Debug\net8.0\TcpChatApplicationServer.dll
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\TcpRunner\TcpChatApplicationServer\obj\Debug\net8.0\refint\TcpChatApplicationServer.dll
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\TcpRunner\TcpChatApplicationServer\obj\Debug\net8.0\TcpChatApplicationServer.pdb
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\TcpRunner\TcpChatApplicationServer\obj\Debug\net8.0\TcpChatApplicationServer.genruntimeconfig.cache
+C:\Users\Admin\Desktop\HolidayProject\KubernetesTest\TcpRunner\TcpChatApplicationServer\obj\Debug\net8.0\ref\TcpChatApplicationServer.dll

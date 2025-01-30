@@ -8,10 +8,10 @@ public class TcpServerGetDeleteFriendsRequests
 {
     public static async Task Main(string[] args)
     {
-        var ipAddress = IPAddress.Parse("127.0.0.1");
-        var ipEndpoint = new IPEndPoint(ipAddress, 3000);
+        var ipAddress = IPAddress.Parse("0.0.0.0");
+        var ipEndpoint = new IPEndPoint(ipAddress, 30008);
         var tcpServer = new TcpListener(ipEndpoint);
-        var grpcChannel = GrpcChannel.ForAddress("localhost");
+        var grpcChannel = GrpcChannel.ForAddress("http://grpcserviceinteractingbetweenusers:8080");
         var sendFriendRequestService = new SendFriendRequestHandler.SendFriendRequestHandlerClient(grpcChannel);
         tcpServer.Start();
         while (true)
