@@ -1,0 +1,3 @@
+CREATE TABLE IF NOT EXISTS "Version"(Id uuid, Value character varying);
+INSERT INTO "Version"(Id, Value)
+VALUES(gen_random_uuid(), '5.0');

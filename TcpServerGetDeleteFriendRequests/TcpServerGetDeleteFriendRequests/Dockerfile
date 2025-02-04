@@ -13,5 +13,8 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
 WORKDIR /app
 
 COPY --from=build /app/out .
+COPY --from=build /app/health_check.sh .
+
+RUN apt update && apt install -y procps
 
 ENTRYPOINT ["dotnet", "TcpServerGetDeleteFriendRequests.dll"]

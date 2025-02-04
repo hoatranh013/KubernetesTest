@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: postgres-db
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: postgres
+    template:
+      metadata:
+        labels:
+          app: postgres
+      spec:
+        containers:
+          - name: postgres
+            image: postgres:latest
+            env:
+              - name: POSTGRES_USER
+                valueFrom:
+                  secretKeyRef:
+                    name: postgres-db-secret
+                    key: POSTGRES_USER
+              - name: POSTGRES_PASSWORD
+                valueFrom:
+                  secretKeyRef:
+                    name: postgres-db-secret
+                    key: POSTGRES_PASSWORD
+              - name: POSTGRES_DB
+                valueFrom:
+                  secretKeyRef:
+                    name: postgres-db-secret
+                    key: POSTGRES_DB
+        ports:
+          - containerPort: 5432
+        volumeMounts:
+          - name: postgres-data
+            mountPath: /var/lib/postgresql/data
+          - name: postgres-seeds
+            mountPath: /opt/PostgresqlSeedsVolume
+        command: ["/bin/bash", "-c"]
+        args:
+          - |
+            apt-get update && apt-get install -y do2unix && \
+            do2unix /opt/PostgresqlSeedsVolume/postgresql_seeds_creating.sh && \
+            /opt/PostgresqlSeedsVolume/postgresql_seeds_creating.sh
+        volumes:
+          - name: postgres-data
+            persistentVolumeClaim:
+              claimName: postgres-data-pvc
+          - name: postgres-seeds
+            hostPath:
+              path: ./PostgresqlSeedsVolume
+              type: Directory

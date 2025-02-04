@@ -217,6 +217,12 @@ services:
     ports:
       - "30005:30005"
     restart: on-failure
+    healthcheck:
+      test: ["CMD", "bash", "-c", "apt-get update && apt-get install -y dos2unix && dos2unix health_check.sh && chmod +x health_check.sh && bash health_check.sh"]
+      interval: 30s
+      retries: 2
+      timeout: 60s
+      start_period: 15s
     networks:
       - backend
     depends_on:
@@ -228,6 +234,12 @@ services:
     ports:
       - "30006:30006"
     restart: on-failure
+    healthcheck:
+      test: ["CMD", "bash", "-c", "apt-get update && apt-get install -y dos2unix && dos2unix health_check.sh && chmod +x health_check.sh && bash health_check.sh"]
+      interval: 30s
+      retries: 2
+      timeout: 60s
+      start_period: 15s
     networks:
       - backend
     depends_on:
@@ -239,6 +251,12 @@ services:
     ports:
       - "30007:30007"
     restart: on-failure
+    healthcheck:
+      test: ["CMD", "bash", "-c", "apt-get update && apt-get install -y dos2unix && dos2unix health_check.sh && chmod +x health_check.sh && bash health_check.sh"]
+      interval: 30s
+      retries: 2
+      timeout: 60s
+      start_period: 15s
     networks:
       - backend
     depends_on:
@@ -250,6 +268,12 @@ services:
     ports:
       - "30008:30008"
     restart: on-failure
+    healthcheck:
+      test: ["CMD", "bash", "-c", "apt-get update && apt-get install -y dos2unix && dos2unix health_check.sh && chmod +x health_check.sh && bash health_check.sh"]
+      interval: 30s
+      retries: 2
+      timeout: 60s
+      start_period: 15s
     networks:
       - backend
     depends_on:
