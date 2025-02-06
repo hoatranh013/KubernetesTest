@@ -63,6 +63,50 @@ pipeline{
                 }
             }
         }
+        stage("Send Email Notification"){
+            steps{
+                sh '''
+                    if [ ! -d "EmailNotificationFolder" ] then
+                        mkdir "EmailNotificationFolder"
+                    fi
+                    cd EmailNotificationFolder
+                    count=1
+                    stop=0
+                    while [ stop -ne 1 ]; do
+                        if [ ! -f "email_notification_${count}.txt" ]; then
+                            touch "email_notification_${count}.txt";
+                            echo "chaunguyengiang2000@gmail.com" >> "email_notification_${count}.txt"
+                            stop=1
+                        else
+                            count=$((count+1))
+                        fi
+                    done
+                '''
+            }
+            post{
+                always{
+                    sh '''
+                        cd EmailNotificationFolder
+                        emailList=""
+                        for item in $(ls)
+                        do
+                            emailList="${emailList}, $(cat ${item})"
+                        done
+                        echo "$emailList"
+                    '''
+                    emailext(
+                        to: "${emailList}",
+                        subject: "Build Success: ${env.JOB_NAME} - Build #${env.BUILD_NUMBER}",
+                        body: """
+                            Build Status: SUCCESS
+                            Project: ${env.JOB_NAME}
+                            Build URL: ${env.BUILD_URL}
+                            Build Log: ${env.BUILD_URL}console
+                        """
+                    )
+                }
+            }
+        }
     }
     post{
         always{
