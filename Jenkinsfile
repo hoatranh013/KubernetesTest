@@ -90,7 +90,11 @@ pipeline{
                         emailList=""
                         for item in $(ls)
                         do
-                            emailList="${emailList}, $(cat ${item})"
+                            if [ $emailList != "" ]; then
+                              emailList="${emailList}, $(cat ${item})"
+                            else
+                              emailList="$(cat ${item})"
+                            fi
                         done
                         echo "$emailList"
                     '''
