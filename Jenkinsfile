@@ -92,7 +92,7 @@ pipeline{
                           for item in $(ls)
                          do
                             if [ -n "$emailList" ]; then
-                                  emailList="${emailList}, $(cat ${item})"
+                                  emailList="${emailList},$(cat ${item})"
                                 else
                                    emailList="$(cat ${item})"
                              fi
