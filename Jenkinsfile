@@ -84,6 +84,7 @@ pipeline{
                 '''
             }
             post{
+		script {
                 always{
                     def emailList = sh(script: '''
                         cd EmailNotificationFolder
@@ -105,6 +106,7 @@ pipeline{
                         """
                     )
                 }
+		}
             }
         }
     }
