@@ -84,29 +84,33 @@ pipeline{
                 '''
             }
             post{
-		script {
                 always{
-                    def emailList = sh(script: '''
-                        cd EmailNotificationFolder
-                        emailList=""
-                        for item in $(ls)
-                        do
-                            emailList="${emailList}, $(cat ${item})"
-                        done
-                        echo "$emailList"
-                      ''', returnStdout: true).trim() 
-                    emailext(
-                        to: "${emailList}",
-                        subject: "Build Success: ${env.JOB_NAME} - Build #${env.BUILD_NUMBER}",
-                        body: """
-                            Build Status: SUCCESS
-                            Project: ${env.JOB_NAME}
-                            Build URL: ${env.BUILD_URL}
-                            Build Log: ${env.BUILD_URL}console
-                        """
-                    )
+                    script {
+                      def emailList = sh(script: '''
+                         cd EmailNotificationFolder
+                           emailList=""
+                          for item in $(ls)
+                         do
+                            if [ -n "$emailList" ]; then
+                                  emailList="${emailList}, $(cat ${item})"
+                                else
+                                   emailList="$(cat ${item})"
+                             fi
+                         done
+                          echo "$emailList"
+                          ''', returnStdout: true).trim() 
+                      emailext(
+                         to: "${emailList}",
+                            subject: "Build Success: ${env.JOB_NAME} - Build #${env.BUILD_NUMBER}",
+                            body: """
+                              Build Status: SUCCESS
+                              Project: ${env.JOB_NAME}
+                              Build URL: ${env.BUILD_URL}
+                             Build Log: ${env.BUILD_URL}console
+                            """
+                         )   
+                    }
                 }
-		}
             }
         }
     }
