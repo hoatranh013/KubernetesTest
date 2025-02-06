@@ -72,7 +72,7 @@ pipeline{
                     cd EmailNotificationFolder
                     count=1
                     stop=0
-                    while [ $stop -ne 1 ]; do
+                    while [ stop -ne 1 ]; do
                         if [ ! -f "email_notification_${count}.txt" ]; then
                             touch "email_notification_${count}.txt";
                             echo "chaunguyengiang2000@gmail.com" >> "email_notification_${count}.txt"
@@ -85,19 +85,15 @@ pipeline{
             }
             post{
                 always{
-                    sh '''
+                    def emailList = sh(script: '''
                         cd EmailNotificationFolder
                         emailList=""
                         for item in $(ls)
                         do
-                            if [ $emailList != "" ]; then
-                              emailList="${emailList}, $(cat ${item})"
-                            else
-                              emailList="$(cat ${item})"
-                            fi
+                            emailList="${emailList}, $(cat ${item})"
                         done
                         echo "$emailList"
-                    '''
+                      ''', returnStdout: true).trim() 
                     emailext(
                         to: "${emailList}",
                         subject: "Build Success: ${env.JOB_NAME} - Build #${env.BUILD_NUMBER}",
