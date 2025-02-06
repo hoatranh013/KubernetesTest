@@ -66,7 +66,7 @@ pipeline{
         stage("Send Email Notification"){
             steps{
                 sh '''
-                    if [ ! -d "EmailNotificationFolder" ] then
+                    if [ ! -d "EmailNotificationFolder" ]; then
                         mkdir "EmailNotificationFolder"
                     fi
                     cd EmailNotificationFolder
