@@ -72,7 +72,7 @@ pipeline{
                     cd EmailNotificationFolder
                     count=1
                     stop=0
-                    while [ stop -ne 1 ]; do
+                    while [ $stop -ne 1 ]; do
                         if [ ! -f "email_notification_${count}.txt" ]; then
                             touch "email_notification_${count}.txt";
                             echo "chaunguyengiang2000@gmail.com" >> "email_notification_${count}.txt"
