@@ -51,7 +51,7 @@ pipeline{
             }
             post{
                 success{
-                    withAWS(credentials: 'aws-credentials', region: 'us-east-1'){
+                    withAWS(credentials: 'id-upload-to-s3', region: 'us-east-1'){
                          sh '''
                            export AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
                            export AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
@@ -92,7 +92,7 @@ pipeline{
                           for item in $(ls)
                          do
                             if [ -n "$emailList" ]; then
-                                  emailList="${emailList},$(cat ${item})"
+                                  emailList="${emailList}, $(cat ${item})"
                                 else
                                    emailList="$(cat ${item})"
                              fi
@@ -109,6 +109,18 @@ pipeline{
                              Build Log: ${env.BUILD_URL}console
                             """
                          )   
+                    }
+                }
+            }
+        }
+        stage("Analyzing Code") {
+            environment {
+                scannerHome = tool 'Sonar'
+            }
+            steps {
+                script {
+                    withSonarQubeEnv('Sonar') {
+                        sh 'mvn clean install sonar:sonar'
                     }
                 }
             }
