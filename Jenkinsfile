@@ -116,6 +116,7 @@ pipeline{
         stage("Analyzing Code") {
             environment {
                 scannerHome = tool 'Sonar'
+                MAVEN_HOME = '/usr/share/maven'
             }
             steps {
                 script {
