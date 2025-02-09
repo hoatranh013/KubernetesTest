@@ -51,7 +51,7 @@ pipeline{
             }
             post{
                 success{
-                    withAWS(credentials: 'id-upload-to-s3', region: 'us-east-1'){
+                    withAWS(credentials: 'aws-credentials', region: 'us-east-1'){
                          sh '''
                            export AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
                            export AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
